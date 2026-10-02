@@ -120,33 +120,56 @@
       return S.readStatic();
     },
 
-    /* sha hiện tại của file (dùng phát hiện xung đột) */
+    /* sha commit hiện tại của nhánh (dùng phát hiện xung đột khi xuất bản) */
     head: function (cfg) {
-      return ghReq(cfg, ghPath(cfg) + '/contents/' + (cfg.path || 'content.json') + '?ref=' + encodeURIComponent(cfg.branch || 'main'))
-        .then(function (j) { return { sha: j.sha, size: j.size }; })
+      return ghReq(cfg, ghPath(cfg) + '/git/ref/heads/' + encodeURIComponent(cfg.branch || 'main'))
+        .then(function (j) { return { sha: (j.object && j.object.sha) || null }; })
         .catch(function (e) { if (e.status === 404) return { sha: null }; throw e; });
     },
 
+    /* Xuất bản bằng Git Data API: blob -> tree -> commit -> cập nhật nhánh.
+       Giống hệt cơ chế của script deploy: nguyên tử, không phụ thuộc "sha" của
+       file nên không bao giờ dính lỗi "sha wasn't supplied". */
     write: function (cfg, content, o) {
       o = o || {};
-      var path = ghPath(cfg) + '/contents/' + (cfg.path || 'content.json');
+      var branch = cfg.branch || 'main';
+      var filePath = cfg.path || 'content.json';
+      var json = JSON.stringify(content, null, 1);
       var self = this;
       return self.head(cfg).then(function (h) {
-        if (o.baseSha !== undefined && h.sha && o.baseSha && h.sha !== o.baseSha) {
-          var e = new Error('CONFLICT'); e.status = 409; e.sha = h.sha; throw e;
+        if (!h.sha) {
+          var e0 = new Error('Không thấy nhánh "' + branch + '" trong repo ' + cfg.owner + '/' + cfg.repo +
+            '. Mở hộp Kết nối và kiểm tra lại ô Nhánh (thường là main).');
+          e0.status = 404; throw e0;
         }
-        var json = JSON.stringify(content, null, 1);
-        return ghReq(cfg, path, {
-          method: 'PUT',
-          body: {
-            message: (o.note || 'Cập nhật cẩm nang') + '\n\nXuat ban tu trang cam nang (v' + SEC.APP_VERSION + ')',
-            content: U.b64encode(json),
-            branch: cfg.branch || 'main',
-            sha: h.sha || undefined
-          }
-        }).then(function (res) {
-          return { ok: true, sha: res.content && res.content.sha, commit: res.commit && res.commit.sha, size: json.length };
-        });
+        if (o.baseSha && h.sha !== o.baseSha) { var ec = new Error('CONFLICT'); ec.status = 409; ec.sha = h.sha; throw ec; }
+        var baseCommit = h.sha;
+        return ghReq(cfg, ghPath(cfg) + '/git/commits/' + baseCommit)
+          .then(function (c) { return c.tree.sha; })
+          .then(function (baseTree) {
+            return ghReq(cfg, ghPath(cfg) + '/git/blobs', {
+              method: 'POST', body: { content: U.b64encode(json), encoding: 'base64' }
+            }).then(function (blob) {
+              return ghReq(cfg, ghPath(cfg) + '/git/trees', {
+                method: 'POST',
+                body: { base_tree: baseTree, tree: [{ path: filePath, mode: '100644', type: 'blob', sha: blob.sha }] }
+              });
+            });
+          })
+          .then(function (tree) {
+            return ghReq(cfg, ghPath(cfg) + '/git/commits', {
+              method: 'POST',
+              body: {
+                message: (o.note || 'Cập nhật cẩm nang') + '\n\nXuất bản từ trang cẩm nang (v' + SEC.APP_VERSION + ')',
+                tree: tree.sha, parents: [baseCommit]
+              }
+            });
+          })
+          .then(function (commit) {
+            return ghReq(cfg, ghPath(cfg) + '/git/refs/heads/' + encodeURIComponent(branch), {
+              method: 'PATCH', body: { sha: commit.sha }
+            }).then(function () { return { ok: true, sha: commit.sha, commit: commit.sha, size: json.length }; });
+          });
       });
     },
 
