@@ -16,12 +16,12 @@
    "Bảo lưu"
   ],
   "commonDocsTitle": "Tài liệu chung",
-  "updatedAt": "2026-10-01T07:15:47.311Z",
-  "updatedBy": "Bản gốc",
-  "version": "1.0.0",
   "heroTitle": "Cẩm nang",
   "heroTitleAccent": "giáo viên",
-  "logo": "assets/logo.jpg"
+  "logo": "assets/logo.jpg",
+  "updatedAt": "2026-10-02T08:05:43.639Z",
+  "updatedBy": "Thành",
+  "version": "1.0.0"
  },
  "phases": [
   {
@@ -32,7 +32,8 @@
     "Test tài khoản Zoom & Gmail, chuẩn bị slide, luyện tập bài giảng",
     "Kết bạn trợ giảng, tham gia nhóm FB/Zalo lớp, giới thiệu bản thân"
    ],
-   "outcome": "sẵn sàng 100% về công cụ, nội dung và kết nối với lớp trước buổi khai giảng"
+   "outcome": "sẵn sàng 100% về công cụ, nội dung và kết nối với lớp trước buổi khai giảng",
+   "notes": []
   },
   {
    "id": "during",
@@ -43,7 +44,8 @@
     "Theo dõi chỉ số, báo cáo tuần, xử lý tình huống đặc biệt",
     "**Riêng KTN:** buổi 2 phổ biến nội quy, hướng dẫn cách làm BTVN; buổi 4 hướng dẫn học viên xem bài chữa"
    ],
-   "outcome": "buổi học diễn ra đúng quy trình, học viên được chăm sóc xuyên suốt"
+   "outcome": "buổi học diễn ra đúng quy trình, học viên được chăm sóc xuyên suốt",
+   "notes": []
   },
   {
    "id": "after",
@@ -54,7 +56,8 @@
     "Đánh giá feedback để xét tiêu chuẩn nhận lớp mới",
     "**Riêng KTN:** buổi 24 làm bài test cuối khóa"
    ],
-   "outcome": "học viên được chốt khóa đầy đủ, GV có căn cứ để nhận lớp tiếp theo"
+   "outcome": "học viên được chốt khóa đầy đủ, GV có căn cứ để nhận lớp tiếp theo",
+   "notes": []
   },
   {
    "id": "common",
@@ -62,7 +65,8 @@
    "bullets": [
     "Chính sách, chương trình và công cụ dùng xuyên suốt cả ba giai đoạn: học phí, Góc lan tỏa, Getfly, Q&A hàng tuần, tài liệu tham khảo"
    ],
-   "outcome": ""
+   "outcome": "",
+   "notes": []
   }
  ],
  "sections": [
@@ -728,6 +732,13 @@
      "url": "https://docs.google.com/spreadsheets/d/118SlmdSeSbaKQWd4p1hInuutzwBAyLzKhbNXUB68Kns/edit?gid=0#gid=0"
     }
    ]
+  },
+  {
+   "id": "s26-moi",
+   "phase": "common",
+   "title": "Mục mớiáddsf",
+   "body": "**Heello**\n## sdfdsf\n### sdfsdf\nsdfsdsadfsadfasdfasdfsadfsadfsdf\n",
+   "links": []
   }
  ],
  "templates": [
@@ -801,5 +812,6 @@
    "name": "3Q GV - TG trước trong sau khóa học",
    "url": "https://docs.google.com/spreadsheets/d/1jK0uK5UpJ9FvfAWDzxo8OaF7uY13S1kFW8ZyJ_NDdRo/edit?gid=0#gid=0"
   }
- ]
+ ],
+ "__rateLeft": "4975"
 }
