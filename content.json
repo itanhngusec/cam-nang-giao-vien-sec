@@ -19,7 +19,7 @@
   "heroTitle": "Cẩm nang",
   "heroTitleAccent": "giáo viên",
   "logo": "assets/logo.jpg",
-  "updatedAt": "2026-10-02T08:05:43.639Z",
+  "updatedAt": "2026-10-02T08:07:20.100Z",
   "updatedBy": "Thành",
   "version": "1.0.0"
  },
@@ -738,6 +738,13 @@
    "phase": "common",
    "title": "Mục mớiáddsf",
    "body": "**Heello**\n## sdfdsf\n### sdfsdf\nsdfsdsadfsadfasdfasdfsadfsadfsdf\n",
+   "links": []
+  },
+  {
+   "id": "s27-moi",
+   "phase": "before",
+   "title": "Mục mớiádfasdf",
+   "body": "- Nội dung mớiádfasdfasdf",
    "links": []
   }
  ],
