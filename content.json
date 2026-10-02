@@ -1,0 +1,805 @@
+{
+ "v": 5,
+ "meta": {
+  "title": "Cẩm nang giáo viên SEC",
+  "subtitle": "Quy trình vận hành lớp, mẫu tin nhắn và tài liệu cho giáo viên: trước, trong và sau khóa học. Tìm nhanh theo từ khóa.",
+  "brand": "Cẩm nang giáo viên",
+  "org": "SEC – Tiếng Anh đơn giản",
+  "footer": "Cẩm nang dành cho giáo viên SEC. Cần bổ sung hoặc sửa nội dung? Liên hệ quản lý đào tạo.",
+  "searchPlaceholder": "Tìm theo từ khóa: zoom, BTVN, xin nghỉ, bảo lưu…",
+  "quickChips": [
+   "Zoom",
+   "Livestream",
+   "BTVN",
+   "Báo cáo tuần",
+   "Xin nghỉ",
+   "Bảo lưu"
+  ],
+  "commonDocsTitle": "Tài liệu chung",
+  "updatedAt": "2026-10-01T07:15:47.311Z",
+  "updatedBy": "Bản gốc",
+  "version": "1.0.0",
+  "heroTitle": "Cẩm nang",
+  "heroTitleAccent": "giáo viên",
+  "logo": "assets/logo.jpg"
+ },
+ "phases": [
+  {
+   "id": "before",
+   "name": "Trước khóa học",
+   "bullets": [
+    "Nhận thông tin lớp (mã lớp, ca học, sĩ số, DS học viên) từ hành chính",
+    "Test tài khoản Zoom & Gmail, chuẩn bị slide, luyện tập bài giảng",
+    "Kết bạn trợ giảng, tham gia nhóm FB/Zalo lớp, giới thiệu bản thân"
+   ],
+   "outcome": "sẵn sàng 100% về công cụ, nội dung và kết nối với lớp trước buổi khai giảng"
+  },
+  {
+   "id": "during",
+   "name": "Trong khóa học",
+   "bullets": [
+    "Vào lớp đúng giờ, đúng tác phong",
+    "Dạy – giao & chấm BTVN – đăng bài theo mẫu",
+    "Theo dõi chỉ số, báo cáo tuần, xử lý tình huống đặc biệt",
+    "**Riêng KTN:** buổi 2 phổ biến nội quy, hướng dẫn cách làm BTVN; buổi 4 hướng dẫn học viên xem bài chữa"
+   ],
+   "outcome": "buổi học diễn ra đúng quy trình, học viên được chăm sóc xuyên suốt"
+  },
+  {
+   "id": "after",
+   "name": "Sau khóa học",
+   "bullets": [
+    "Test cuối khóa, chấm & tổng kết",
+    "Status chào tạm biệt, lưu tư liệu truyền thông",
+    "Đánh giá feedback để xét tiêu chuẩn nhận lớp mới",
+    "**Riêng KTN:** buổi 24 làm bài test cuối khóa"
+   ],
+   "outcome": "học viên được chốt khóa đầy đủ, GV có căn cứ để nhận lớp tiếp theo"
+  },
+  {
+   "id": "common",
+   "name": "Áp dụng chung",
+   "bullets": [
+    "Chính sách, chương trình và công cụ dùng xuyên suốt cả ba giai đoạn: học phí, Góc lan tỏa, Getfly, Q&A hàng tuần, tài liệu tham khảo"
+   ],
+   "outcome": ""
+  }
+ ],
+ "sections": [
+  {
+   "id": "s01-nhan-lop-ket-noi-voi-lop",
+   "phase": "before",
+   "title": "Nhận lớp & kết nối với lớp",
+   "body": "- Nhận thông tin lớp (mã lớp, ca học, sĩ số, danh sách học viên) từ hành chính\n- Kết bạn trợ giảng, tham gia nhóm Facebook/Zalo của lớp, giới thiệu bản thân\n- Nắm phân loại 3 Zalo theo thông báo cập nhật của trung tâm\n- Sau khi nhận lớp, kiểm tra học viên có thuộc diện cần bản cam kết đặc biệt hay không (xem mục Học viên diện đặc biệt)",
+   "links": []
+  },
+  {
+   "id": "s02-tac-phong-quy-chuan-cua-giao-vien",
+   "phase": "before",
+   "title": "Tác phong & quy chuẩn của giáo viên",
+   "body": "## Thời gian có mặt tại lớp\n- **Lớp online:** vào Zoom ít nhất trước 10 phút. Mở camera trò chuyện với học viên ít nhất 5 phút trước giờ dạy.\n- **Lớp offline:** có mặt trước ít nhất 20 phút để chuẩn bị đón lớp và kiểm tra phương tiện giảng dạy.\n- **Ví dụ:** ca 18h00 → 17h50 gửi link Zoom → 17h55 trò chuyện với học viên → 18h00 vào học luôn. Không tuân thủ các mốc này dễ dẫn đến \"cháy bài\".\n## Trang phục & tác phong chung\n- Xem file quy chuẩn tác phong làm việc của giáo viên bên dưới\n## Quy chuẩn truyền thông\n- Khi đăng bài truyền thông tài nguyên SEC, giáo viên cần đáp ứng ít nhất 1 trong 3 quy chuẩn truyền thông của trung tâm\n## Công cụ hỗ trợ giảng dạy\n- Cài đặt Annotator PDF và mapping bảng viết Wacom theo hướng dẫn",
+   "links": [
+    {
+     "name": "Quy chuẩn tác phong làm việc GV ver2 (PDF)",
+     "url": "https://drive.google.com/file/d/1IR3_fbPThc2pqx0BT6yOQ-eOQO6fCplb/view?usp=sharing"
+    },
+    {
+     "name": "Quy chuẩn tác phong làm việc của giáo viên (bản khác)",
+     "url": "https://drive.google.com/file/d/1RgjHeEq2b2n9xFbeDSf25OYUtAGUqgxz/view?usp=sharing"
+    },
+    {
+     "name": "Hướng dẫn cài Annotator PDF & Wacom",
+     "url": "https://docs.google.com/document/d/1X-VbD8fSD6AcnIXG8iapM48aoKMU-o1BKoraG05LFkg/edit?usp=sharing"
+    }
+   ]
+  },
+  {
+   "id": "s03-chuan-bi-test-tai-khoan-zoom-truoc-khai-gi",
+   "phase": "before",
+   "title": "Chuẩn bị & test tài khoản Zoom (trước khai giảng 3 ngày)",
+   "body": "- Giáo viên vào check lại Zoom của lớp trước khai giảng 3 ngày; kiểm tra tài khoản còn hạn không\n- Mở Zoom trên zoom.us, đăng nhập đúng tài khoản được phân công\n- Kiểm tra hạn Zoom: vào My Account xem có enable hết không. Nếu hết hạn, báo lại Uyên Nhi\n- Vào Meeting → lên lịch 1 cuộc họp, đặt **No fixed time** (2 buổi/tuần nên không cố định được)\n- Nên để passcode ngắn, **không mở waiting room**\n- Copy lời mời + mẫu tin nhắn gửi link Zoom\n- Xem tài khoản Gmail livestream được phân công (dùng Gmail này để mở các link mẫu nhắc khóa học)",
+   "links": [
+    {
+     "name": "Bảng phân công Zoom Anh ngữ SEC",
+     "url": "https://docs.google.com/spreadsheets/d/1PI2C8GX8d2NQCVM-yGXAgx8TxjjqG5JLlEjB3gRpnTk/edit?gid=0#gid=0"
+    },
+    {
+     "name": "Phân công tài khoản YouTube Livestream",
+     "url": "https://docs.google.com/spreadsheets/d/1w4d7DTNiKBAeQwIljLplDFvwJSnDIXrMC_SqShXYSvE/edit?gid=0#gid=0"
+    },
+    {
+     "name": "Zoom.us",
+     "url": "http://zoom.us"
+    }
+   ]
+  },
+  {
+   "id": "s04-checklist-cong-viec-truoc-khi-run-lop",
+   "phase": "before",
+   "title": "Checklist công việc trước khi run lớp",
+   "body": "- Sau mỗi buổi có sheet đánh giá theo dõi buổi học, gắn trong folder đào tạo cá nhân\n- Hoàn thành checklist các công việc trước khai giảng\n- **DEADLINE: 17h ngày hôm trước khai giảng**",
+   "links": [
+    {
+     "name": "(Mẫu sơ bộ) Đánh giá theo dõi buổi học",
+     "url": "https://docs.google.com/spreadsheets/d/1xGltzaGlY_fWuQtHfYmpvOeebP9m-7yv59XcuK9E_IA/edit?gid=2025427464#gid=2025427464"
+    }
+   ]
+  },
+  {
+   "id": "s05-noi-quy-lop-hoc-quy-dinh-bao-luu",
+   "phase": "before",
+   "title": "Nội quy lớp học & quy định bảo lưu",
+   "body": "- Giáo viên căn cứ theo slide chuẩn về nội quy và quy định bảo lưu để phổ biến cho lớp\n- Bản mới nhất áp dụng cho lớp khai giảng từ 01.02.2026 (KTN On-Off); bản 01.10.2025 là bản cũ\n- KTN: phổ biến nội quy ở buổi 2, sau buổi 2 tạo vote để học viên xác nhận đã nắm rõ (mẫu ở mục Status & tin nhắn theo buổi)",
+   "links": [
+    {
+     "name": "Cách học và nội quy KTN On-Off (01.02.2026, mới nhất)",
+     "url": "https://docs.google.com/presentation/d/11IEg8eL8xjRYluWY05ZEt83nvdioZI0G/edit?slide=id.g3518f940217_0_0#slide=id.g3518f940217_0_0"
+    },
+    {
+     "name": "Cách học và nội quy On-Off (01.10.2025, cũ)",
+     "url": "https://docs.google.com/presentation/d/1s8ktgjoE20JRtPDhP5lu2ZorgXlh1cfF/edit?slide=id.g3518f940217_0_0#slide=id.g3518f940217_0_0"
+    }
+   ]
+  },
+  {
+   "id": "s06-hoc-vien-dien-dac-biet-can-ban-cam-ket",
+   "phase": "before",
+   "title": "Học viên diện đặc biệt cần bản cam kết",
+   "body": "- Bộ phận Quản lý chất lượng xây dựng các bản cam kết cho học viên thuộc diện đặc biệt:\n- Học viên đăng ký học theo chế độ **50% record**\n- Học viên **học song song khóa học**\n- Học viên **nằm ngoài độ tuổi quy định** của trung tâm\n- Học viên **học vượt level**\n- Giáo viên xem bảng tổng hợp bản cam kết để biết học viên trong lớp thuộc diện nào",
+   "links": [
+    {
+     "name": "Tổng hợp bản cam kết học viên case đặc biệt",
+     "url": "https://docs.google.com/spreadsheets/d/1uI1Jh0UX6OMw8my3mRloOwlk-vkU1iDb1r60R7c5ZOQ/edit?hl=vi&gid=0#gid=0"
+    }
+   ]
+  },
+  {
+   "id": "s07-tai-lieu-khoa-hoc-chuan-bi-bai-giang",
+   "phase": "before",
+   "title": "Tài liệu khóa học & chuẩn bị bài giảng",
+   "body": "- Chuẩn bị slide, luyện tập bài giảng trước buổi khai giảng\n- **Tài liệu khóa nền:** bản khung chương trình đang run và bản nhiều khung chương trình\n- **Record 24 buổi** lớp KTN new để tham khảo\n- Tổng hợp tài liệu các khóa học có trên Drive",
+   "links": [
+    {
+     "name": "Khung chương trình đang run (KTN đơn giản hóa lớp A đạt)",
+     "url": "https://drive.google.com/drive/folders/15vzXoC_9cB-f4PAj8P7gnkEBtIJM_UR3"
+    },
+    {
+     "name": "Sản phẩm Kaizen KTN 2026 (nhiều khung chương trình)",
+     "url": "https://drive.google.com/drive/folders/1OYDLaiIfp6Uga6JNUj_wkLRIqzjfV9Oc"
+    },
+    {
+     "name": "Record 24 buổi lớp KTN new",
+     "url": "https://docs.google.com/spreadsheets/d/15nZCBziGUOtgUNMfW_Hq9ewqn5bMU3cVQbEW02ddvbU/edit?gid=949921253#gid=949921253"
+    },
+    {
+     "name": "Tổng hợp tài liệu các khóa học",
+     "url": "https://docs.google.com/spreadsheets/d/1RxOQy0U0NOFU90q9uMwcP7SdDL4D-Hf82ykpnbtpaag/edit?gid=392885018#gid=392885018"
+    }
+   ]
+  },
+  {
+   "id": "s08-livestream-buoi-hoc",
+   "phase": "during",
+   "title": "Livestream buổi học",
+   "body": "- Livestream (gọi Hotline bằng Zalo để xác nhận số). Cần livestream trên cloud dự phòng khi YouTube đánh gậy\n- **Cú pháp đặt tên:** Mã lớp + Tên buổi + Ngày học\n- **Lưu ý quan trọng:** 5 buổi đầu tiên của lớp đầu tiên, để video ở chế độ **Không công khai (Unlisted)** để các thành viên trong team xem và góp ý. Tuyệt đối không để chế độ Public",
+   "links": [
+    {
+     "name": "Phân công tài khoản YouTube Livestream",
+     "url": "https://docs.google.com/spreadsheets/d/1w4d7DTNiKBAeQwIljLplDFvwJSnDIXrMC_SqShXYSvE/edit?gid=0#gid=0"
+    }
+   ]
+  },
+  {
+   "id": "s09-giao-cham-dang-bai-tap-ve-nha-btvn",
+   "phase": "during",
+   "title": "Giao, chấm & đăng bài tập về nhà (BTVN)",
+   "body": "## Lấy BTVN\n- Lấy trong sheet check lớp (chọn đúng sheet theo cơ sở, khóa, thời điểm khai giảng, xem mục kế tiếp) hoặc trong file chăm sóc học viên\n## Chấm bài\n- Chỉ chấm phần viết lại câu\n- Chấm đúng deadline cho học viên nộp đúng hạn. Học viên nộp muộn thì báo lại với giáo viên hoặc trợ giảng\n- Có thể dùng trợ lý chấm bài KTN bằng ChatGPT (xem mục Công cụ & tài liệu tham khảo)\n## Đăng bài / status sau buổi học\n- Đăng thông báo đã chấm bài xong và các lỗi sai học viên thường mắc phải\n## Báo cáo chấm bài\n- Điền vào file báo cáo chấm bài của GV",
+   "links": [
+    {
+     "name": "[Mr. Tú] Theo dõi chăm sóc học viên",
+     "url": "https://docs.google.com/spreadsheets/d/1qV5cUndy2KLY-eGmhi9AEv38APf_rK8jh0KFDKXQK0Q/edit?gid=1182708028#gid=1182708028"
+    },
+    {
+     "name": "NEW SEC-support 01.08 (mẫu status)",
+     "url": "https://docs.google.com/spreadsheets/d/14K8jiarRqXgHbouGEB2OLUSS09Pp12DyPp03IxreCVA/edit?gid=1165815168#gid=1165815168"
+    },
+    {
+     "name": "Báo cáo chấm bài của GV",
+     "url": "https://docs.google.com/spreadsheets/d/1g4RMwf9xh6FWA-CgOeJl5TOrmL17-BlxmaHSTGs5lxQ/edit?gid=1434757348#gid=1434757348"
+    },
+    {
+     "name": "Tổng hợp lỗi sai khóa KTN",
+     "url": "https://docs.google.com/spreadsheets/d/14SmG6PZOOdX-lJWZiLiqw7EitpSBEt_pZpv6b4VWENM/edit?gid=0#gid=0"
+    }
+   ]
+  },
+  {
+   "id": "s10-link-check-btvn-theo-khoa-hoc",
+   "phase": "during",
+   "title": "Link check BTVN theo khóa học",
+   "body": "- Chọn đúng sheet theo **khóa học** và **thời điểm khai giảng** của lớp mình\n## KTN & TOEIC đang học\n- Cơ sở Trường Chinh chia sheet theo tháng khai giảng: từ T6/2026, từ T12/2025, từ T9/2025, từ T8/2025 trở về trước\n- Cơ sở Hà Đông – Cầu Giấy có sheet riêng\n## IELTS · Giao tiếp · VSTEP · TOEIC SW\n- IELTS: lớp khai giảng từ T10/2025 và từ T9/2025 trở về trước\n- Giao tiếp (PCT): sheet chung của tất cả thầy cô từ T2/2026; lớp khai giảng từ T1/2026 trở về trước có sheet riêng theo giáo viên\n## Lớp đã học xong / lớp cũ\n- TOEIC LR đã học xong, KTN đã học xong, lớp luyện đề thực chiến, IELTS Minh Trang (cũ)",
+   "links": [
+    {
+     "name": "KTN/TOEIC: Check lớp từ T6/2026",
+     "url": "https://docs.google.com/spreadsheets/d/1odEkgSa7Mjt1xhtQYc7vC9kSNiBKXs_hjiun0Yxwkxo/edit?gid=1094469288#gid=1094469288"
+    },
+    {
+     "name": "KTN/TOEIC: Check lớp từ T12/2025",
+     "url": "https://docs.google.com/spreadsheets/d/1SpEVtOlenMyM19TTGVANQBZ7t-6mRLq141beYQUO9jM/edit?gid=1114030840#gid=1114030840"
+    },
+    {
+     "name": "KTN/TOEIC: Check lớp từ T9/2025",
+     "url": "https://docs.google.com/spreadsheets/d/1b0bsMkbAfrvbJxvCynzEZdXnOoQBTQFAD_IwB9NERuI/edit?gid=1567262556#gid=1567262556"
+    },
+    {
+     "name": "KTN/TOEIC: Check lớp từ T8/2025 trở về trước",
+     "url": "https://docs.google.com/spreadsheets/d/11X_gv3bQ-3srqcTXS2AfLXLc8hxB4pm8q9XKuKjdcio/edit?gid=2026623547#gid=2026623547"
+    },
+    {
+     "name": "Check lớp CS Hà Đông – Cầu Giấy",
+     "url": "https://docs.google.com/spreadsheets/d/1NYLLjwVO7JA0tXAmBeVAMV9v7iv5uD1aoqGB4_VcTac/edit?gid=1887381169#gid=1887381169"
+    },
+    {
+     "name": "IELTS: theo dõi BTVN từ T10/2025",
+     "url": "https://docs.google.com/spreadsheets/d/1yY_OcF5VouLsJD4-AU0yGpuhcQZQvX3xRWWwi8j0SUc/edit?gid=1540733035#gid=1540733035"
+    },
+    {
+     "name": "IELTS: theo dõi BTVN từ T9/2025 trở về trước",
+     "url": "https://docs.google.com/spreadsheets/d/1v4qHJnY_KGeILdxd1m3Io5Zsza4_sX012APf5VdvoH4/edit?gid=406332196#gid=406332196"
+    },
+    {
+     "name": "Giao tiếp: BTVN PCT từ T2/2026",
+     "url": "https://docs.google.com/spreadsheets/d/10Qs8GGMiglkNzpADuXlVq6xCgTik3xu2wTtDC1YmUrQ/edit?gid=145329501#gid=145329501"
+    },
+    {
+     "name": "Giao tiếp: BTVN PCT Ms Hoài Linh",
+     "url": "https://docs.google.com/spreadsheets/d/1CDn6T6tna8CSKGMXIbLaG-LDXuovD72-VFngsToRfMg/edit?gid=1591768597#gid=1591768597"
+    },
+    {
+     "name": "Giao tiếp: BTVN PCT Ms Uông Hằng",
+     "url": "https://docs.google.com/spreadsheets/d/1RgPEeqv2UFFKE8FkoQZBiT36o_TfakGWkuR-x-fc5s/edit?gid=837030328#gid=837030328"
+    },
+    {
+     "name": "Giao tiếp: BTVN PCT Ms M Ngọc, Ms Hân, Mr Đăng",
+     "url": "https://docs.google.com/spreadsheets/d/1F7HuILDx1f9jg6DD7n5fVrevP_bn-kGG6XDpMUL9Dr4/edit?usp=sharing"
+    },
+    {
+     "name": "VSTEP: check quá trình học B1, B2",
+     "url": "https://docs.google.com/spreadsheets/d/10q4NeGOryoUIbOMD2I9SjKe8zdrJhOOLOkghWH1Txtg/edit?gid=1365736431#gid=1365736431"
+    },
+    {
+     "name": "TOEIC Nói–Viết: check BTVN từ SW10",
+     "url": "https://docs.google.com/spreadsheets/d/1Da2GhQq_n124RuMWY4ujEIKlmN_Lz4cNi--jgOkza7A/edit?gid=1591768597#gid=1591768597"
+    },
+    {
+     "name": "TOEIC LR đã học xong",
+     "url": "https://docs.google.com/spreadsheets/d/1IlHDETpX2UyrZR8NFdJ1TFgK2VJCnoJCD1ZSBmk2TP4/edit?gid=0#gid=0"
+    },
+    {
+     "name": "KTN, LR đã học xong",
+     "url": "https://docs.google.com/spreadsheets/d/1SmQIPbl7M4dpsAQ02ZJ-Q9yHvkNK_Yc_iacUCdgc0aI/edit?gid=1102975165#gid=1102975165"
+    },
+    {
+     "name": "Lớp luyện đề thực chiến",
+     "url": "https://docs.google.com/spreadsheets/d/1mljlKR5MnperJIVcYzcCL0IvcyAcV-NUmtrzeveldQc/edit?gid=1826717929#gid=1826717929"
+    },
+    {
+     "name": "IELTS Minh Trang (cũ)",
+     "url": "https://docs.google.com/spreadsheets/d/1_3j1VgfyZWzskHKeDgBcUZGxer-WYSnMug0742D3XCA/edit?gid=1052564921#gid=1052564921"
+    }
+   ]
+  },
+  {
+   "id": "s11-status-tin-nhan-theo-buoi-buoi-1-buoi-20",
+   "phase": "during",
+   "title": "Status & tin nhắn theo buổi (buổi 1 – buổi 20)",
+   "body": "- Mẫu nhắc BTVN áp dụng cho lớp khai giảng **sau 30.06.2025** (tạo BTVN bằng TOOL): KTN chung, Nền học sinh, TOEIC LR. Mở link mẫu bằng Gmail được phân công livestream\n- Đăng **cả nhóm Zalo và Facebook** theo mẫu; khi mẫu ghi \"đăng tương tự Zalo\" thì đăng nội dung như bên Facebook\n## Khóa Kiến thức nền (KTN)\n- **Buổi 1 (Facebook):** thông báo BTVN, học viên giới thiệu bản thân ở phần bình luận\n- **Buổi 2:** hướng dẫn làm BTVN trên Google Docs do trợ giảng tạo riêng. Mã lấy link dạng [Mã lớp][Số điện thoại]. Bài kiểm tra sai tính phạt 2k/câu, không làm trước bài các buổi sau, không nộp chậm deadline (12h trưa ngày nộp)\n- **Sau buổi 2:** tạo vote để học viên xác nhận đã nắm rõ nội quy lớp & quy định bảo lưu\n- **Buổi 13 (sau check-in):** đăng đúng bố cục theo mẫu check-in\n- **Buổi 20:** đăng bài tuyển dụng SEC (Zalo và Facebook)\n## Khóa TOEIC LR\n- **Buổi 1:** giới thiệu bản thân + BTVN làm trực tiếp trên Google Docs, kèm video hướng dẫn Google Docs & Azota\n- **Sau buổi check-in:** đăng đúng bố cục theo mẫu check-in\n- **Buổi 20:** đăng bài tuyển dụng SEC, giống mẫu KTN",
+   "links": [
+    {
+     "name": "Mẫu tin nhắn dành cho GV và TG",
+     "url": "https://docs.google.com/spreadsheets/d/118SlmdSeSbaKQWd4p1hInuutzwBAyLzKhbNXUB68Kns/edit?gid=0#gid=0"
+    },
+    {
+     "name": "Mẫu nhắc BTVN: KTN",
+     "url": "https://docs.google.com/spreadsheets/d/14K8jiarRqXgHbouGEB2OLUSS09Pp12DyPp03IxreCVA/edit?gid=1165815168#gid=1165815168"
+    },
+    {
+     "name": "Mẫu nhắc BTVN: Nền học sinh",
+     "url": "https://docs.google.com/spreadsheets/d/14K8jiarRqXgHbouGEB2OLUSS09Pp12DyPp03IxreCVA/edit?gid=20662972#gid=20662972"
+    },
+    {
+     "name": "Mẫu nhắc BTVN: TOEIC LR",
+     "url": "https://docs.google.com/spreadsheets/d/14K8jiarRqXgHbouGEB2OLUSS09Pp12DyPp03IxreCVA/edit?gid=1476837454#gid=1476837454"
+    },
+    {
+     "name": "Mẫu tin nhắn mới TOEIC LR (Google Doc)",
+     "url": "https://docs.google.com/document/d/1482OUBlGHB95ViWyq-uAkoI46OuNQObEruFWlS-j5pA/edit?hl=vi&tab=t.0"
+    },
+    {
+     "name": "Mẫu đăng check-in",
+     "url": "https://docs.google.com/spreadsheets/d/1zdvQjHFm6ztY7XVfhUtUDFabZN_rAzbal-CP7as3jxg/edit?gid=2106929303#gid=2106929303"
+    },
+    {
+     "name": "Trang lấy link BTVN của học viên",
+     "url": "https://testonline.anhngusec.edu.vn/login-doc"
+    },
+    {
+     "name": "Video hướng dẫn BTVN Google Docs & Azota (KTN)",
+     "url": "https://drive.google.com/drive/folders/1ZK3qsq2Dx9xpZTd04J194tHRCtgwSyJ2?usp=sharing"
+    },
+    {
+     "name": "Video hướng dẫn BTVN Google Docs & Azota (TOEIC LR)",
+     "url": "https://drive.google.com/file/d/13GMOQkgQAJpLd4q9UtPiHQxz5tHpsT0h/view?usp=sharing"
+    }
+   ]
+  },
+  {
+   "id": "s12-bao-cao-tuan-check-chi-so-bao-cao-cua-giao",
+   "phase": "during",
+   "title": "Báo cáo tuần, check chỉ số & báo cáo của giáo viên",
+   "body": "## Báo cáo tuần\n- Thứ 3 họp giao ban → **hoàn thành báo cáo tuần trước 18h chiều thứ 2**\n- **Sĩ số đầu khóa:** con số cố định, không thay đổi trong suốt khóa học\n- **Sĩ số hiện tại:** sĩ số thực tế tại thời điểm báo cáo\n- **Tỷ lệ tham gia buổi 1 / buổi 2 của tuần:** tính theo 2 buổi học trong tuần đó\n- **2 cột trung bình:** hệ thống tự tính, không cần nhập tay\n- **Vấn đề & nguyên nhân:** ghi rõ nếu có; chưa xác định được thì để họp giao ban cả team thảo luận\n## Check chỉ số\n- Kiểm tra lớp của mình đã có trong sheet chỉ số chưa để sheet tự nhảy chỉ số\n## Các báo cáo khác của giáo viên\n- **Báo cáo chấm bài** của GV\n- **Báo cáo trường hợp đặc biệt:** dùng form mới áp dụng từ 12.11.2025, có link xem kết quả\n- **Báo cáo bảo lưu, chuyển lớp:** xem mục Bảo lưu, chuyển lớp, học lại",
+   "links": [
+    {
+     "name": "Tổng theo dõi chỉ số các team",
+     "url": "https://docs.google.com/spreadsheets/d/10McAjciTWzP4qlxyzRL_WHbWteoF76mXzHBANOa7FxU/edit?gid=625045036#gid=625045036"
+    },
+    {
+     "name": "Báo cáo chấm bài của GV",
+     "url": "https://docs.google.com/spreadsheets/d/1g4RMwf9xh6FWA-CgOeJl5TOrmL17-BlxmaHSTGs5lxQ/edit?gid=1434757348#gid=1434757348"
+    },
+    {
+     "name": "Form báo cáo trường hợp đặc biệt (từ 12.11.2025)",
+     "url": "https://forms.gle/yM8UZ3dAR6aAkUpJ7"
+    },
+    {
+     "name": "Kết quả báo cáo trường hợp đặc biệt",
+     "url": "https://docs.google.com/spreadsheets/d/1P9b7oCoko4mhY22uNmMkLiOT6UsrxFqbzKg9gzSRJgQ/edit?gid=2036606866#gid=2036606866"
+    }
+   ]
+  },
+  {
+   "id": "s13-ho-tro-hoc-vien-xu-ly-truong-hop-dac-biet-",
+   "phase": "during",
+   "title": "Hỗ trợ học viên & xử lý trường hợp đặc biệt (THĐB)",
+   "body": "## Phân loại trạng thái học viên\n- **Cá nhân:** học viên cá biệt, vẫn tham gia lớp, làm BTVN nhưng không bị tick phạt, vẫn cần được chăm sóc (care). Khi học viên cần chữa bài phải báo lại cho giáo viên\n- **Bảo lưu:** áp dụng trong 3 buổi học đầu tiên. Mất phí 50% nếu lỗi thuộc về học viên trong khi hành chính đã báo lịch và tư vấn đầy đủ. Bất khả kháng cần có minh chứng cụ thể, trung tâm sẽ hỗ trợ hết sức nhưng vẫn cần lý do thỏa đáng\n## Hai loại form xử lý\n- **Form bảo lưu:** dùng khi học viên không có vấn đề gì với quy định, không cần trao đổi thêm. Chọn từng mục phù hợp và điền đầy đủ. Học viên chỉ đóng 50% phí khi quay lại học (được hỗ trợ 50%, không phải bị mất 50%)\n- **Form đặc biệt:** dùng khi cần trao đổi thêm để chốt phương án cuối, áp dụng răn đe với nghỉ dưới 3 buổi. Giáo viên **tuyệt đối không tự ý đổi trạng thái học viên**, phải trao đổi trước với học viên (dùng mẫu tin nhắn có sẵn). Nêu cụ thể con số (không làm bao nhiêu buổi tập, không học bao nhiêu buổi), kèm ảnh minh chứng có nội dung phản ánh trọng tâm\n## Tham khảo cách trao đổi\n- Cẩm nang bộ phận trực Hotline: tài liệu hotline dùng để hỗ trợ học viên, giáo viên tham khảo để trao đổi phù hợp",
+   "links": [
+    {
+     "name": "Lưu đồ giáo viên xử lý THĐB",
+     "url": "https://drive.google.com/file/d/1B5VrcDicRoMBtxWboOCSkS3D6OEi4jjL/view?usp=sharing"
+    },
+    {
+     "name": "Form bảo lưu",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLSeaxYJ3JFyAe56tS5jl_x_Xk4GBT1mhKav3neSpKwKZvGzEsA/viewform"
+    },
+    {
+     "name": "Form đặc biệt",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLSfDUA4tUyVZBXpQ2gR7r560pU_oq2xE9pmJnPuJ86MBuAiwGw/viewform"
+    },
+    {
+     "name": "Cẩm nang bộ phận trực Hotline",
+     "url": "https://docs.google.com/spreadsheets/d/1zHxB-OjH3_Is0ge416cvF3a69g37X-MKDJz7MkzEVE0/edit?gid=0#gid=0"
+    },
+    {
+     "name": "Lưu đồ THĐB (bản diagrams.net)",
+     "url": "https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&page-id=VnfNgF5tYSpY8eFEesZe&dark=auto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1WYJBMTAax8BE5a1cN51WXRvm5uQGogXy%26export%3Ddownload"
+    },
+    {
+     "name": "Mẫu tin nhắn dành cho GV và TG",
+     "url": "https://docs.google.com/spreadsheets/d/118SlmdSeSbaKQWd4p1hInuutzwBAyLzKhbNXUB68Kns/edit?gid=0#gid=0"
+    }
+   ]
+  },
+  {
+   "id": "s14-bao-luu-chuyen-lop-dung-hoc-hoc-lai",
+   "phase": "during",
+   "title": "Bảo lưu, chuyển lớp, dừng học & học lại",
+   "body": "- **Hành chính là bộ phận cuối cùng chốt và xác nhận dừng học cho học viên.** Giáo viên tuyệt đối không tự ý xác nhận dừng học\n- Giáo viên điền form báo cáo bảo lưu, chuyển lớp và theo dõi kết quả trong sheet kết quả\n- Học viên muốn học lại điền form đăng ký học lại; hành chính kiểm tra kết quả học tập và hỗ trợ đăng ký sau 2–3 ngày làm việc\n- Gửi học viên mẫu tin nhắn đăng ký học lại bên dưới",
+   "links": [
+    {
+     "name": "Form báo cáo bảo lưu, chuyển lớp",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLSeaxYJ3JFyAe56tS5jl_x_Xk4GBT1mhKav3neSpKwKZvGzEsA/viewform"
+    },
+    {
+     "name": "Form học viên đăng ký học lại (bản GV)",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLScMpJSOV_wrpoFnWsxlUOPPJePV6b7edEHUhlmQPRrO4sIQQQ/viewform"
+    },
+    {
+     "name": "Form đăng ký học lại (gửi học viên)",
+     "url": "https://forms.gle/mDPoJNtcGSUNDytV8"
+    },
+    {
+     "name": "Quy trình xử lý trường hợp học lại",
+     "url": "https://docs.google.com/spreadsheets/d/1GgB7EX1J3QnLgwCMCqWFQehgQH3Jy63IRpEstPN4eNc/edit?gid=0#gid=0"
+    },
+    {
+     "name": "Kết quả chuyển lớp, bảo lưu, tạm dừng học, học lại",
+     "url": "https://docs.google.com/spreadsheets/d/1lUWCIwEm_e5q-VlymYOYHCIpkE-GxgCIhosZ06tPYf0/edit?gid=860162627#gid=860162627"
+    }
+   ]
+  },
+  {
+   "id": "s15-thong-bao-xin-nghi-xin-tham-gia-online",
+   "phase": "during",
+   "title": "Thông báo xin nghỉ / xin tham gia online",
+   "body": "- Áp dụng khi cần xin nghỉ hoặc xin tham gia online buổi dạy, buổi họp giao ban, buổi đào tạo văn hóa doanh nghiệp\n- Thực hiện theo các bước trong file quy trình",
+   "links": [
+    {
+     "name": "Quy trình giáo viên xin nghỉ / xin online",
+     "url": "https://docs.google.com/spreadsheets/d/1cU9SrGTrrVJPU1-zu1SWDmVQjUfhDgnZ1lpmRclJeU8/edit?usp=sharing"
+    }
+   ]
+  },
+  {
+   "id": "s16-quan-ly-chat-luong-thuong-phat",
+   "phase": "during",
+   "title": "Quản lý chất lượng & thưởng phạt",
+   "body": "- Giáo viên theo dõi tình hình chất lượng và tỉ lệ trường hợp đặc biệt của mình\n- Báo cáo tổng hợp chỉ số lệch chuẩn theo từng lớp, từng giáo viên và từng team\n- Báo cáo VNGB chất lượng các khóa học\n- **3K hiệu quả giáo viên** và bảng thưởng phạt của giáo viên",
+   "links": [
+    {
+     "name": "Quản lý chất lượng",
+     "url": "https://docs.google.com/spreadsheets/d/1UrT55tPjlNOX8pJmwiLFT-Q5Yo1vc6Hw_FarU0AYUow/edit?gid=0#gid=0"
+    },
+    {
+     "name": "Báo cáo tổng chỉ số chất lượng",
+     "url": "https://docs.google.com/spreadsheets/d/1X8YPfnDnDX4uRFNufJfgtYZciD1w7SdUYxlYANWhhvk/edit?gid=563148555#gid=563148555"
+    },
+    {
+     "name": "Báo cáo VNGB chất lượng các khóa học",
+     "url": "https://docs.google.com/spreadsheets/d/1uOo0iTIu9oPDgL6zoD-MHtFmZrStL3vK3Kz_cSN44lM/edit?gid=191999010#gid=191999010"
+    },
+    {
+     "name": "Bảng thưởng phạt của giáo viên",
+     "url": "https://docs.google.com/spreadsheets/d/1FZPJarc5GmFmii7nsB05RubN72hT052bZgK3mXWTw_o/edit?gid=2067101396#gid=2067101396"
+    }
+   ]
+  },
+  {
+   "id": "s17-test-giua-khoa-cuoi-khoa",
+   "phase": "after",
+   "title": "Test giữa khóa & cuối khóa",
+   "body": "- KTN có bài test cuối khóa ở **buổi 24**\n- Các khóa làm qua form (KTN, SC2, SC3) theo quy trình giáo viên chốt điểm test cuối khóa\n## Đề test theo khóa\n- **KTN, NHS:** test cuối khóa\n- **HS1:** test giữa khóa và cuối khóa\n- **SC2, SC3:** test cuối khóa\n- **HS2:** test giữa khóa\n- **ES:** chưa có link",
+   "links": [
+    {
+     "name": "Quy trình GV chốt điểm test cuối khóa (KTN, SC2, SC3)",
+     "url": "https://docs.google.com/spreadsheets/d/1NCwUJtzfSg_B0Dk59epgxSVujZQGilJDlPSWIKfdPj8/edit?gid=0#gid=0"
+    },
+    {
+     "name": "KTN, NHS: đề test cuối khóa",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLScUyuJ25uSGDv8HIvfWevXWnAKsFE15FO5xu1pXlQeqNjQs5A/viewform"
+    },
+    {
+     "name": "KTN, NHS: kết quả cuối khóa",
+     "url": "https://docs.google.com/spreadsheets/d/102Ua4BXJUqGgpYblrZNcxr7-z4XN8xXyxkMxfxzrivM/edit?gid=395076505#gid=395076505"
+    },
+    {
+     "name": "HS1: đề test giữa khóa",
+     "url": "https://docs.google.com/forms/d/1Iuss5_kddVKTDAHagtKfhkUJZuxURj-z_LOLrTpOO_4/edit"
+    },
+    {
+     "name": "HS1: kết quả giữa khóa",
+     "url": "https://docs.google.com/spreadsheets/d/1bLUc7cS54N1YEgH8XWVM-u4hDBJGj-mmvSMzTzWABEo/edit?gid=647224534#gid=647224534"
+    },
+    {
+     "name": "HS1: đề test cuối khóa",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLScOex3icHjaRzfPmgwIK_QfI88STZDj0yQsyzJjOe13Oz1Tpw/viewform"
+    },
+    {
+     "name": "HS1: kết quả cuối khóa",
+     "url": "https://docs.google.com/spreadsheets/d/12RF6dbgwV1oYmfjXeQ5CWypGOB-bLpjfvkUS0iQx2pw/edit?gid=981332163#gid=981332163"
+    },
+    {
+     "name": "SC2: đề test cuối khóa",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLSfu442tgHbpmMVEoPRYwSQgNbDtwF9HKoL5HzMFx2hV0HxjqQ/viewform"
+    },
+    {
+     "name": "SC2: kết quả cuối khóa",
+     "url": "https://docs.google.com/spreadsheets/d/1ct5D5oYXOEJ8IOI8kcJV1RLh-SVLjqr6sXqitzHghxU/edit?gid=1909761338#gid=1909761338"
+    },
+    {
+     "name": "SC3: đề test cuối khóa",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLSdbswQgSbMNrOXWfMolyZTGU9fZNJM62LYbbvNP5hLQ7G9eZA/viewform"
+    },
+    {
+     "name": "SC3: kết quả cuối khóa",
+     "url": "https://docs.google.com/spreadsheets/d/15BDd5f3QZwcGOioZEQhjZf3lT7CUUhOYJeOEKL5_gM4/edit?gid=109797369#gid=109797369"
+    },
+    {
+     "name": "HS2: đề test giữa khóa",
+     "url": "https://docs.google.com/forms/d/10YwsV4ngyh1gX7pDh-WH3cEVRGF8z-VE2oawJ6_UA8s/edit"
+    },
+    {
+     "name": "HS2: kết quả giữa khóa",
+     "url": "https://docs.google.com/spreadsheets/d/1g-bBaXCLqp-zvCy1hM8XqODf8e9C_pL2Dnb-h2VSHuM/edit?usp=sharing"
+    }
+   ]
+  },
+  {
+   "id": "s18-status-cuoi-khoa-buoi-21-sau-buoi-24-3q-pu",
+   "phase": "after",
+   "title": "Status cuối khóa (buổi 21 – sau buổi 24) & 3Q push học viên",
+   "body": "## Khóa TOEIC LR\n- **Buổi 21:** đăng hướng dẫn đăng ký thi TOEIC và link nhóm Zalo hỗ trợ thi\n- **Buổi 23 (sau khi hướng dẫn học viên đăng ký thi):** thông báo hỗ trợ chi phí thi quốc tế và hai địa điểm thi (mẫu bên dưới)\n- **Buổi 24:** đăng theo mẫu cuối khóa\n## Khóa Kiến thức nền (KTN)\n- **Buổi 21:** xem mẫu riêng cho buổi 21\n- **Sau buổi 24:** đăng theo mẫu cuối khóa (Facebook)\n## Tất cả các khóa\n- **3Q push học viên cuối khóa (buổi n-3):** đăng cả nhóm Facebook và Zalo\n- Status chào tạm biệt, lưu tư liệu truyền thông",
+   "links": [
+    {
+     "name": "3Q push học viên cuối khóa buổi n-3",
+     "url": "https://docs.google.com/spreadsheets/d/1NrBjXBoswSltaDl894RS4DVuFnRiZ8-IAaycY5adNKY/edit?gid=370501306#gid=370501306"
+    },
+    {
+     "name": "Mẫu đăng buổi 23–24 TOEIC LR (Google Doc)",
+     "url": "https://docs.google.com/document/d/101i7i-cohUYoziM1fFeusHAqEeUV1P1XKRI84jbPXW8/edit?usp=sharing"
+    },
+    {
+     "name": "Hướng dẫn đăng ký thi TOEIC",
+     "url": "https://anhngusec.edu.vn/huong-dan-dang-ky-thi-toeic/"
+    },
+    {
+     "name": "Nhóm Zalo hỗ trợ thi TOEIC",
+     "url": "https://zalo.me/g/zzdskw315"
+    },
+    {
+     "name": "Form hỗ trợ chi phí thi quốc tế ngay sau khóa",
+     "url": "https://forms.gle/cM1utpfRfdWWXF3dA"
+    },
+    {
+     "name": "Mẫu tin nhắn dành cho GV và TG",
+     "url": "https://docs.google.com/spreadsheets/d/118SlmdSeSbaKQWd4p1hInuutzwBAyLzKhbNXUB68Kns/edit?gid=0#gid=0"
+    }
+   ]
+  },
+  {
+   "id": "s19-thi-chung-chi-theo-doi-hoc-vien-di-thi-ho-",
+   "phase": "after",
+   "title": "Thi chứng chỉ, theo dõi học viên đi thi & hỗ trợ lệ phí",
+   "body": "## Khảo sát mục tiêu đi thi\n- Khảo sát theo khóa: TOEIC LR, TOEIC SW, VSTEP, IELTS; xem kết quả, thống kê ở sheet khảo sát\n## Theo dõi học viên đi thi cuối khóa\n- Danh sách theo dõi học viên đi thi, tỷ lệ đi thi theo từng giáo viên, báo cáo gọi điện khảo sát, báo cáo số lượng điểm về, bảng chỉ số số lượng học viên đi thi\n## Địa điểm thi TOEIC quốc tế\n- **IIG Quốc Tế:** thi giấy & thi máy (Hà Nội, Đà Nẵng, TP.HCM; ở xa liên hệ hotline IIG 1900 636 929 hỏi địa điểm ủy quyền gần nhất)\n- **ĐH Bách Khoa Hà Nội:** chỉ thi giấy, đăng ký ít nhất trước 10 ngày (hotline 024.3868.2445 / 024.3623.1425). Phải đăng ký online trước rồi mới nộp hồ sơ\n## Hỗ trợ lệ phí thi\n- Form đăng ký riêng cho TOEIC Nghe–Đọc, TOEIC Nói–Viết, B1/B2 và IELTS\n- Thi quốc tế ngay sau khóa: hỗ trợ 300.000 VND/học viên khi gửi điểm về hotline; tham gia Góc lan tỏa được tổng hỗ trợ tới 1.000.000",
+   "links": [
+    {
+     "name": "Khảo sát mục tiêu: TOEIC LR",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLSde0J7EksTkV7O4Q3sWbCxK7di1R_V2vOCml5duj9gGTVruxw/viewform"
+    },
+    {
+     "name": "Khảo sát mục tiêu: TOEIC SW",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLSclswuryo99sgOlSlPg6lmu7bfrAt5D1DkAUQICdpHEhBI2wg/viewform"
+    },
+    {
+     "name": "Khảo sát mục tiêu: VSTEP",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLScVdoTRnAmeMvgahefwOqtJaPxpmc30BYnu1p41X3lYKW_mUg/viewform"
+    },
+    {
+     "name": "Khảo sát mục tiêu: IELTS",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLSde5w3fVTsmMdBuSkXtOEtheD76GKzAdO4nQNNXoKGHb23XFA/viewform"
+    },
+    {
+     "name": "Kết quả, thống kê khảo sát",
+     "url": "https://docs.google.com/spreadsheets/d/1BOrNLB0yPOomLdVpwKeuxKS3kDJeJ9hghJFuq3yv4i4/edit?gid=0#gid=0"
+    },
+    {
+     "name": "Danh sách theo dõi học viên đi thi cuối khóa",
+     "url": "https://docs.google.com/spreadsheets/d/1wNJ3jCD0ylPQl9rhctpGgxGtxSvIw9behuIdpAMHk5I/edit?hl=vi&gid=0#gid=0"
+    },
+    {
+     "name": "Tỷ lệ đi thi theo giáo viên",
+     "url": "https://docs.google.com/spreadsheets/d/1iaSVYEv750-6zkZ1EHTgoNKkmuQ3LQgY5b6kOMiTVnw/edit?gid=1310116833#gid=1310116833"
+    },
+    {
+     "name": "Báo cáo gọi điện khảo sát",
+     "url": "https://docs.google.com/spreadsheets/d/1_wYjznSdIWfeAY0L1Rhpb3LAvywrCNSCTxGvvXFn_nE/edit?gid=0#gid=0"
+    },
+    {
+     "name": "Báo cáo số lượng điểm về",
+     "url": "https://docs.google.com/spreadsheets/d/1srBsryf1Ww0U2iqJ-UZ1EJXD4Q2SkAS32_Zc35MuLmU/edit?gid=0#gid=0"
+    },
+    {
+     "name": "Bảng chỉ số số lượng học viên đi thi",
+     "url": "https://docs.google.com/spreadsheets/d/12MrkpTQySaqxBqJGxjjg62uSVNnVMlyxEcWBeaqCEls/edit?hl=vi&gid=0#gid=0"
+    },
+    {
+     "name": "Đăng ký hỗ trợ lệ phí: TOEIC Nghe–Đọc",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLSdiUQ5kdNzcgESWju-7v_fBvaT9Us6vgDmeN9MmIBayk8cQDQ/viewform"
+    },
+    {
+     "name": "Đăng ký hỗ trợ lệ phí: TOEIC Nói–Viết",
+     "url": "https://forms.gle/F9JNWzHLpsFNxFRk6"
+    },
+    {
+     "name": "Đăng ký hỗ trợ lệ phí: B1, B2",
+     "url": "https://forms.gle/Fj3f7AFKqG8vveCh6"
+    },
+    {
+     "name": "Đăng ký hỗ trợ lệ phí: IELTS",
+     "url": "https://forms.gle/iVoQ8bTh4i7LSK1S8"
+    },
+    {
+     "name": "Kết quả đăng ký hỗ trợ lệ phí",
+     "url": "https://docs.google.com/spreadsheets/d/1KZTg0tII5EtUPQKEWlvOvOb9wMXlXxXEpTOPIsZVR9s/edit?gid=819502001#gid=819502001"
+    },
+    {
+     "name": "Chương trình hỗ trợ lệ phí thi",
+     "url": "https://www.notion.so/CH-NG-TR-NH-H-TR-L-PH-THI-47227b1507f442f0be31f36006b1c208"
+    },
+    {
+     "name": "IIG: đăng ký thi TOEIC",
+     "url": "https://online.iigvietnam.com/"
+    },
+    {
+     "name": "ĐH Bách Khoa: đăng ký thi TOEIC",
+     "url": "https://clc.hust.edu.vn/dang-ky-thi-toeic-iig-online/"
+    }
+   ]
+  },
+  {
+   "id": "s20-anh-gia-feedback-tieu-chuan-nhan-lop-moi",
+   "phase": "after",
+   "title": "Đánh giá feedback & tiêu chuẩn nhận lớp mới",
+   "body": "- Đánh giá feedback của học viên để xét tiêu chuẩn nhận lớp mới\n- Check các tổng chỉ số trong sheet tổng chỉ số giáo viên để biết timeline nhận lớp của mình\n- Học viên được chốt khóa đầy đủ là căn cứ để giáo viên nhận lớp tiếp theo",
+   "links": [
+    {
+     "name": "Tổng theo dõi chỉ số các team",
+     "url": "https://docs.google.com/spreadsheets/d/10McAjciTWzP4qlxyzRL_WHbWteoF76mXzHBANOa7FxU/edit?gid=625045036#gid=625045036"
+    }
+   ]
+  },
+  {
+   "id": "s21-hoc-phi-cac-khoa-hoc-2026",
+   "phase": "common",
+   "title": "Học phí các khóa học 2026",
+   "body": "- Từ 01/01/2026, học phí các chương trình đào tạo được điều chỉnh theo chính sách mới, nhằm phù hợp với định hướng phát triển, nâng cao chất lượng chương trình học, đội ngũ giảng dạy và dịch vụ chăm sóc học viên\n- Giáo viên chủ động nắm thông tin, thống nhất nội dung tư vấn khi trao đổi với học viên/phụ huynh để tránh nhầm lẫn",
+   "links": [
+    {
+     "name": "Học phí mới 2026",
+     "url": "https://docs.google.com/spreadsheets/d/12xF6oskzc4ZLdIp8kwNgIR2Rz_UPsG6dNJYOucQ9kwI/edit?gid=1173726019#gid=1173726019"
+    },
+    {
+     "name": "Quyết định học phí",
+     "url": "https://drive.google.com/drive/folders/1pPiLd6J3AozrK5L3q9xCcYsCG4wto-YQ"
+    }
+   ]
+  },
+  {
+   "id": "s22-chuong-trinh-check-in-goc-lan-toa",
+   "phase": "common",
+   "title": "Chương trình Check in – Góc lan tỏa",
+   "body": "- Chương trình dành cho học viên check in và lan tỏa cùng SEC, kèm hỗ trợ lệ phí thi (tổng hỗ trợ tới 1.000.000 khi tham gia)\n- Giáo viên đăng bài check in đúng bố cục theo mẫu (KTN buổi 13, TOEIC LR sau buổi check-in)",
+   "links": [
+    {
+     "name": "Chi tiết chương trình Check in – Góc lan tỏa",
+     "url": "https://docs.google.com/spreadsheets/d/1zdvQjHFm6ztY7XVfhUtUDFabZN_rAzbal-CP7as3jxg/edit?gid=974512164#gid=974512164"
+    },
+    {
+     "name": "Chương trình hỗ trợ lệ phí thi",
+     "url": "https://www.notion.so/CH-NG-TR-NH-H-TR-L-PH-THI-47227b1507f442f0be31f36006b1c208"
+    }
+   ]
+  },
+  {
+   "id": "s23-quy-trinh-getfly-team-giao-vien",
+   "phase": "common",
+   "title": "Quy trình Getfly team giáo viên",
+   "body": "- Giáo viên thực hiện theo tài liệu quy trình Getfly của team giáo viên",
+   "links": [
+    {
+     "name": "Quy trình Getfly team giáo viên",
+     "url": "https://docs.google.com/document/d/1eYpsfKSzfmsM1-8de7iHSnZSYw34RD6TptpXboA3UGY/edit?tab=t.97u22hfj6fkv"
+    }
+   ]
+  },
+  {
+   "id": "s24-thu-thap-q-a-hang-tuan",
+   "phase": "common",
+   "title": "Thu thập Q&A hàng tuần",
+   "body": "- Thầy cô điền câu hỏi vào form **trước 18h00 chủ nhật hàng tuần**\n- Câu hỏi có thể về giảng dạy, hỗ trợ học viên, quy định trung tâm hoặc bất kỳ vấn đề nào cần giải đáp",
+   "links": [
+    {
+     "name": "Form thu thập Q&A hàng tuần",
+     "url": "https://forms.gle/zwwo4cG68QtyJLtz6"
+    },
+    {
+     "name": "Câu trả lời Q&A",
+     "url": "https://docs.google.com/spreadsheets/d/1Lb8vg7kkrMnTq-FBLXoToLxnEkMR0th5sT6H8OY5z5M/edit?usp=sharing"
+    }
+   ]
+  },
+  {
+   "id": "s25-cong-cu-tai-lieu-tham-khao",
+   "phase": "common",
+   "title": "Công cụ & tài liệu tham khảo",
+   "body": "- **3Q chăm sóc và theo dõi học viên:** kèm video hướng dẫn tạo sheet theo dõi\n- **Trợ lý chấm bài tập KTN (ChatGPT):** dùng tài khoản ChatGPT Plus chung của trung tâm. Liên hệ quản lý để nhận thông tin đăng nhập\n- **Ý tưởng Kaizen** các khóa KTN & TOEIC (từ T7.2025) và các khóa học khác\n- **Mẫu tin nhắn** cho giáo viên và trợ giảng",
+   "links": [
+    {
+     "name": "3Q chăm sóc và theo dõi học viên",
+     "url": "https://docs.google.com/spreadsheets/d/1OThlCmuBVHLqZLQyWppeNSOWp1kGTytXkZHTC8MGmNE/edit?gid=1278662040#gid=1278662040"
+    },
+    {
+     "name": "Video hướng dẫn tạo sheet chăm sóc học viên",
+     "url": "https://drive.google.com/drive/folders/19uO4vgOTmANRJ-sHqLl8CLwIFyfgc6Na"
+    },
+    {
+     "name": "Trợ lý chấm bài KTN (ChatGPT)",
+     "url": "https://chatgpt.com/g/g-687ed18885908191b3c025ff22a61475-tro-ly-cham-bai-ktn"
+    },
+    {
+     "name": "Ý tưởng Kaizen KTN & TOEIC (T7.2025)",
+     "url": "https://docs.google.com/spreadsheets/d/1zJkc2xOYPzzgDu6u1ovr7tstIgUi7uOJ0tfLWcJ0Or0/edit?gid=0#gid=0"
+    },
+    {
+     "name": "Ý tưởng Kaizen các khóa học",
+     "url": "https://docs.google.com/spreadsheets/d/196Qc6W3BlhwKXFuv5taohtYPdIdx2VkSxipruT32zmc/edit?gid=0#gid=0"
+    },
+    {
+     "name": "Mẫu tin nhắn dành cho GV và TG",
+     "url": "https://docs.google.com/spreadsheets/d/118SlmdSeSbaKQWd4p1hInuutzwBAyLzKhbNXUB68Kns/edit?gid=0#gid=0"
+    }
+   ]
+  }
+ ],
+ "templates": [
+  {
+   "id": "m01-buoi-1-facebook",
+   "phase": "during",
+   "section": "s11-status-tin-nhan-theo-buoi-buoi-1-buoi-20",
+   "course": "KTN",
+   "title": "Buổi 1 (Facebook)",
+   "text": "✨ THÔNG BÁO BÀI TẬP VỀ NHÀ - KHÓA KIẾN THỨC NỀN ✨\nChào các bạn học viên! 🌟\nĐể khởi đầu hành trình học tập thật tốt và giúp cả lớp có thể hiểu rõ về nhau hơn, bài tập buổi 01 sẽ gồm nhiệm vụ chính sau đây:\n- Giới thiệu bản thân vào phần bình luận của bài viết này: Họ tên, tuổi, quê quán, nơi đang học/ làm việc + Ảnh nhận diện mình dễ nhất\nCả lớp cùng mạnh dạn gửi lời kết bạn với mình và với các bạn trong nhóm và trong lớp nhé!\nChúc cả lớp học tốt ạ ❤"
+  },
+  {
+   "id": "m02-buoi-2-facebook",
+   "phase": "during",
+   "section": "s11-status-tin-nhan-theo-buoi-buoi-1-buoi-20",
+   "course": "KTN",
+   "title": "Buổi 2 (Facebook)",
+   "text": "✨ THÔNG BÁO BÀI TẬP VỀ NHÀ - KHÓA KIẾN THỨC NỀN ✨\nBài tập về nhà từ buổi 02 trở đi cả lớp sẽ làm trực tiếp vào link google docs đã được trợ giảng tạo riêng cho từng bạn nhé ạ!\nMã lấy link bài tập có dạng: [Mã lớp][Số điện thoại]\nVD: Lớp mình là KTN..., số điện thoại của bạn là 012345678 thì mã cần nhập để lấy link BTVN là: KTN...012345678\nCả lớp điền mã và lấy link btvn tại đây: https://testonline.anhngusec.edu.vn/login-doc\n📌 Lưu ý:\n- Cả lớp cần làm bài theo từng buổi tại file bài tập mình đã tạo ở buổi học đầu tiên.\n- Cần luyện tập thật kỹ trước khi vào Link kiểm tra, với bài kiểm tra nếu sai tính phạt 2k/1 câu.\n- Cả lớp cần làm bài tập theo từng buổi, không làm trước bài của các buổi sau, không nộp chậm deadline\nHướng dẫn làm btvn trên google docs và azota: https://drive.google.com/drive/folders/1ZK3qsq2Dx9xpZTd04J194tHRCtgwSyJ2?usp=sharing\nDEADLINE ( HẠN NỘP): 12H TRƯA NGÀY _/_ Ạ"
+  },
+  {
+   "id": "m03-sau-buoi-2-vote-xac-nhan-noi-quy-bao-luu-z",
+   "phase": "during",
+   "section": "s11-status-tin-nhan-theo-buoi-buoi-1-buoi-20",
+   "course": "KTN",
+   "title": "Sau buổi 2: vote xác nhận nội quy & bảo lưu (Zalo)",
+   "text": "1. GV TẠO VOTE HỌC VIÊN XÁC NHẬN ĐÃ NẮM RÕ NỘI QUY LỚP & QUY ĐỊNH BẢO LƯU\n@All Em/ Mình gửi cả lớp Nội quy lớp học & Quy định về bảo lưu, cả nhà vui lòng đọc kỹ và nắm rõ để đảm bảo quyền lợi của mình trong quá trình học tập. Anh/ chị nhận được thông tin thì vote bên dưới giúp em/ mình trước .... ngày..../....ạ. Nếu có bất kỳ thắc mắc nào về nội quy, quy định bảo lưu, cả nhà hãy liên hệ với em để được giải đáp kịp thời nhé. Chúc các bạn học tập hiệu quả và đạt kết quả tốt!\n2. TẠO VOTE\nTHÔNG TIN VỀ NỘI QUY LỚP HỌC VÀ QUY ĐỊNH BẢO LƯU\n- Đã nắm rõ thông tin và cam kết thực hiện\n- Chưa rõ, cần hỗ trợ"
+  },
+  {
+   "id": "m04-buoi-20-bai-tuyen-dung-zalo-facebook-dang-",
+   "phase": "during",
+   "section": "s11-status-tin-nhan-theo-buoi-buoi-1-buoi-20",
+   "course": "Tất cả các khóa",
+   "title": "Buổi 20: bài tuyển dụng (Zalo, Facebook đăng tương tự)",
+   "text": "SEC TÌM CỘNG SỰ CÙNG CHÍ HƯỚNG - Cùng làm việc, sống và cống hiến trong hạnh phúc!\nPASS PHỎNG VẤN – ĐI LÀM NGAY | THU NHẬP TỪ 10-20 TRIỆU\nHiện tại, do nhu cầu mở rộng, trung tâm đang cần TUYỂN GẤP 03 CHUYÊN VIÊN TƯ VẤN TUYỂN SINH:\n💼 QUYỀN LỢI KHÔNG THỂ BỎ LỠ:\n💰 Lương cứng + thưởng doanh thu + KPI + thưởng nóng: 10 – 20 triệu/tháng\n🔥 Nguồn khách hàng sẵn có, dồi dào – không cần tự tìm\n🏢 Môi trường trẻ – năng động – Mentor 10 năm kinh nghiệm dẫn dắt!\n🎁 Phúc lợi đầy đủ: BHXH, BHYT, thưởng lễ Tết\n📚 Đào tạo chuyên nghiệp, cơ hội lên cấp nhanh chóng\n✨ Ưu tiên ứng viên từng là học viên SEC: PASS thử việc nhanh!\n📌 CÔNG VIỆC CHÍNH:\n✅ Tư vấn & định hướng khóa học phù hợp cho học viên\n✅ Hỗ trợ học viên chọn lớp, chọn ca học phù hợp với lịch trình.\n🕘 Thời gian làm việc: 8h30–18h (xoay ca linh hoạt), nghỉ 6 ngày/tháng.\n📍 Địa điểm: 102 Trường Chinh, Đống Đa, Hà Nội\nỨNG TUYỂN NGAY:\n📧 Gửi CV: teamhr.sec@gmail.com\n📱 Zalo: Ms. Thơm – 0988136992\n🌐 Hoặc đăng ký tại: https://anhngusec.edu.vn/tuyen-dung/\nTham khảo thêm các kênh thông tin của SEC:\n📱 TikTok Tuyển Dụng SEC: https://www.tiktok.com/@life_at_sec01?_t=ZS-8w69aKA1Xaj&_r=1\n🎥 YouTube Tuyển Dụng SEC: https://www.youtube.com/@Tuy%E1%BB%83nD%E1%BB%A5ngAnhNg%E1%BB%AFSEC\n🌐 Website Tuyển Dụng SEC: https://anhngusec.edu.vn/tuyen-dung/\n📱 Fanpage Tuyển Dụng SEC: https://www.facebook.com/profile.php?id=61555287227301\nSEC ĐANG GỌI TÊN BẠN: https://youtu.be/K3Tf_ZodLNk"
+  },
+  {
+   "id": "m05-buoi-1-facebook",
+   "phase": "during",
+   "section": "s11-status-tin-nhan-theo-buoi-buoi-1-buoi-20",
+   "course": "TOEIC LR",
+   "title": "Buổi 1 (Facebook)",
+   "text": "✨ THÔNG BÁO BÀI TẬP VỀ NHÀ - KHÓA TOEIC NGHE- ĐỌC ✨\nChào các bạn học viên! 🌟\nĐể khởi đầu hành trình học tập thật tốt và giúp cả lớp có thể hiểu rõ về nhau hơn, bài tập buổi 01 sẽ gồm nhiệm vụ chính sau đây:\n1. Giới thiệu bản thân: Họ tên, tuổi, quê quán, nơi đang học/ làm việc + Ảnh nhận diện mình dễ nhất\n2. Bài tập về nhà cả lớp sẽ làm trực tiếp vào link google docs đã được trợ giảng tạo riêng cho từng bạn nhé ạ !\nMã lấy link bài tập có dạng: [Mã lớp][Số điện thoại]\nVD: Lớp mình là LR..., số điện thoại của bạn là 012345678 thì mã cần nhập để lấy link BTVN là: LR...012345678\nCả lớp điền mã và lấy link btvn tại đây: https://testonline.anhngusec.edu.vn/login-doc\n📌 Lưu ý:\n- Cả lớp cần làm bài theo từng buổi tại file bài tập mình đã tạo ở buổi học đầu tiên.\n- Cần đọc yêu cầu thật kỹ trước khi vào Link kiểm tra, với bài kiểm tra nếu sai tính phạt 2k/1 câu.\n- Cả lớp cần làm bài tập theo từng buổi, không làm trước bài của các buổi sau, không nộp chậm deadline\nHướng dẫn làm btvn trên google docs và azota: https://drive.google.com/file/d/13GMOQkgQAJpLd4q9UtPiHQxz5tHpsT0h/view?usp=sharing\nDEADLINE ( HẠN NỘP): 12H TRƯA NGÀY */* Ạ"
+  },
+  {
+   "id": "m06-ang-ky-hoc-lai-gui-hoc-vien",
+   "phase": "during",
+   "section": "s14-bao-luu-chuyen-lop-dung-hoc-hoc-lai",
+   "course": "Tất cả các khóa",
+   "title": "Đăng ký học lại (gửi học viên)",
+   "text": "Link đăng kí học lại tại SEC: https://forms.gle/mDPoJNtcGSUNDytV8\nSau khi các bạn điền link bộ phận hành chính sẽ check lại kết quả học tập và hỗ trợ bạn đăng ký học lại sau 2-3 ngày làm việc!\nTrường hợp chưa nhận được kết quả vui lòng nhắn lại zalo hotline 0923 805 999 để SEC phản hồi bạn nhé!\nXin cảm ơn!"
+  },
+  {
+   "id": "m07-buoi-21-huong-dan-dang-ky-thi",
+   "phase": "after",
+   "section": "s18-status-cuoi-khoa-buoi-21-sau-buoi-24-3q-pu",
+   "course": "TOEIC LR",
+   "title": "Buổi 21: hướng dẫn đăng ký thi",
+   "text": "📌 Hướng dẫn đăng ký thi TOEIC từ SEC nè cả nhà ơi!\nSEC đã có bài viết hướng dẫn chi tiết cách đăng ký thi TOEIC rồi đó, cả nhà ai chuẩn bị thi thì lên xem tham khảo nha 👇\n🔗 https://anhngusec.edu.vn/huong-dan-dang-ky-thi-toeic/\nNgoài ra, nếu cần hỗ trợ thêm trong quá trình đăng ký hoặc chuẩn bị thi, mọi người có thể tham gia nhóm hỗ trợ tại đây nhé:\n📩 Link nhóm hỗ trợ thi TOEIC: https://zalo.me/g/zzdskw315\nCó gì chưa rõ mình cứ hỏi trong nhóm để được hỗ trợ nhanh nhất nha!\nChúc cả nhà đăng ký suôn sẻ và thi đạt kết quả thật tốt 💪✨"
+  },
+  {
+   "id": "m08-buoi-23-dang-ky-thi-ho-tro-chi-phi-zalo",
+   "phase": "after",
+   "section": "s18-status-cuoi-khoa-buoi-21-sau-buoi-24-3q-pu",
+   "course": "TOEIC LR",
+   "title": "Buổi 23: đăng ký thi & hỗ trợ chi phí (Zalo)",
+   "text": "Các bạn đăng ký thi Toeic đợt này chú ý:\n❤️ Bạn nào thi Quốc Tế ngay sau khoá học thì đăng ký vào link này để SEC hỗ trợ chi phí nhé\nhttps://forms.gle/cM1utpfRfdWWXF3dA\n❤️ SEC sẽ hỗ trợ 300.000 VND/1 bạn thi QUỐC TẾ ngay sau khoá học khi gửi điểm về báo qua số zalo hotline: 0975186230\nHiện giờ có 2 địa điểm thi: Cả lớp đăng ký vào link bên dưới này và làm theo hướng dẫn nhé:\n• Địa điểm 1: Thi tại IIG Quốc Tế - Có thi giấy & thi máy (có trụ sở tại Hà Nội, TP Đà Nẵng, TP Hồ Chí Minh, bạn nào ở xa có thể liên hệ số hotline: 1900 636 929 để hỏi xem có địa điểm uỷ quyền nào gần nhất chỗ mình nhé.)\n👉 Link: https://online.iigvietnam.com/\n(vào link đăng ký tài khoản - sau đó xác nhận qua email rồi xem clip hướng dẫn)\n👉 Video hướng dẫn đăng ký: https://youtu.be/af47EC7hNrw\n• Địa điểm 2: Thi tại ĐH Bách Khoa Hà Nội - Chỉ thi giấy (đang có ngày…và …gần nhất, và phải đăng ký ít nhất trước 10 ngày nên mình đăng ký sớm để giữ chỗ nha. hotline ĐHBK 024.3868.2445/ 024. 3623.1425)\n👉 Link đăng ký: https://clc.hust.edu.vn/dang-ky-thi-toeic-iig-online/\n👉 Lịch chi tiết tại đây: https://clc.hust.edu.vn/lich-thi-toeic-quoc-te-iig-tai-dai-hoc-bach-khoa-ha-noi-nam-2025/\nSau khi đăng ký sẽ được gửi mail hướng dẫn, các bạn xem hướng dẫn kĩ để hoàn thiện thủ tục đăng ký nhé.\nLưu ý: Chúng ta phải đăng ký online trước, thì mới lên nộp hồ sơ được nhé. Các bạn chú ý đăng ký sớm do hiện giờ rất nhiều người đăng ký nên các mình đăng ký luôn để tránh hết chỗ nhé.\nNgoài ra nếu tham gia chương trình GÓC LAN TỎA cùng SEC thì sẽ được tổng hỗ trợ lên tới 1.000.000\nChi tiết chương trình GÓC LAN TỎA: https://www.notion.so/CH-NG-TR-NH-H-TR-L-PH-THI-47227b1507f442f0be31f36006b1c208"
+  }
+ ],
+ "commonLinks": [
+  {
+   "name": "3Q GV - TG trước trong sau khóa học",
+   "url": "https://docs.google.com/spreadsheets/d/1jK0uK5UpJ9FvfAWDzxo8OaF7uY13S1kFW8ZyJ_NDdRo/edit?gid=0#gid=0"
+  }
+ ]
+}
