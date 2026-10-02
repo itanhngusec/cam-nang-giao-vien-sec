@@ -1,0 +1,14 @@
+{
+  "_comment": "Không chứa mật khẩu. Token chỉ nằm trong trình duyệt người quản trị.",
+  "mode": "github",
+  "github": {
+    "owner": "itanhngusec",
+    "repo": "cam-nang-giao-vien-sec",
+    "branch": "main",
+    "path": "content.json"
+  },
+  "cloud": {
+    "apiBase": ""
+  },
+  "author": ""
+}

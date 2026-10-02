@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Cẩm nang giáo viên SEC — quy trình vận hành lớp, mẫu tin nhắn và tài liệu cho giáo viên: trước, trong và sau khóa học.">
+<meta name="theme-color" content="#1f5aa6">
+<meta property="og:title" content="Cẩm nang giáo viên SEC">
+<meta property="og:description" content="Quy trình vận hành lớp, mẫu tin nhắn và tài liệu cho giáo viên SEC.">
+<meta property="og:type" content="website">
+<title>Cẩm nang giáo viên SEC</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231f5aa6'/><text x='16' y='23' font-size='18' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>S</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Bỏ qua, tới nội dung chính</a>
+
+<header class="top"><div class="w bar">
+  <a class="logo" href="#top"><img data-logo alt="SEC – Tiếng Anh đơn giản" width="61" height="48"><span data-bind="brand">Cẩm nang giáo viên</span></a>
+  <nav class="menu" aria-label="Menu chính"><a href="#overview">Các giai đoạn</a><a href="#overview" data-go="docs">Tất cả tài liệu</a><a href="#overview" data-admin-only hidden id="navAdmin">Bảng quản trị</a></nav>
+  <div class="baract">
+    <span id="syncDot" class="dot" title="Trạng thái nội dung" hidden></span>
+    <button id="btnAdmin" class="ghost" type="button">🔒 Quản trị</button>
+  </div>
+</div></header>
+
+<section class="hero" id="top"><div class="w hg"><div class="hx">
+  <h1 data-hero>Cẩm nang <span>giáo viên</span></h1>
+  <p data-bind="subtitle">Quy trình vận hành lớp, mẫu tin nhắn và tài liệu cho giáo viên: trước, trong và sau khóa học.</p>
+  <input id="q" type="search" placeholder="Tìm theo từ khóa: zoom, BTVN, xin nghỉ, bảo lưu…" aria-label="Tìm kiếm quy trình" autocomplete="off">
+  <div class="chips" id="chips"></div>
+</div>
+<div class="hl"><img data-logo alt="SEC – Tiếng Anh đơn giản" width="230" height="182"></div></div>
+<svg class="wv" viewBox="0 0 1200 52" preserveAspectRatio="none" aria-hidden="true"><path class="wf" d="M0 52V26C300 2 760 2 1200 34V52Z"/><path class="ws" d="M0 26C300 2 760 2 1200 34"/></svg>
+</section>
+
+<main class="w" id="main">
+  <div id="notice"></div>
+  <p id="info" role="status" aria-live="polite"></p>
+  <div id="ow">
+    <h2 class="sh" id="overview" style="margin-top:12px">Quy trình theo giai đoạn khóa học</h2>
+    <div id="ovc"></div>
+  </div>
+  <div id="list"></div>
+</main>
+
+<footer><div class="w">
+  <span data-bind="footer">Cẩm nang dành cho giáo viên SEC.</span>
+  <span class="fmeta"><span id="fUpdated"></span> <a href="#top">Lên đầu trang</a></span>
+</div></footer>
+
+<!-- ============ THANH QUẢN TRỊ (chỉ hiện khi ở chế độ quản trị) ============ -->
+<div id="adminbar" class="abar" hidden>
+  <div class="w abin">
+    <div class="abst">
+      <b id="abMode">—</b>
+      <span id="abState">Đang tải…</span>
+    </div>
+    <div class="abact2">
+      <button type="button" id="abUndo" title="Hoàn tác (Ctrl+Z)">↩︎</button>
+      <button type="button" id="abRedo" title="Làm lại (Ctrl+Shift+Z)">↪︎</button>
+      <button type="button" id="abView">👁 Xem trang</button>
+      <button type="button" id="abHist">🕘 Lịch sử</button>
+      <button type="button" id="abData">⇅ Dữ liệu</button>
+      <button type="button" id="abCfg">⚙ Kết nối</button>
+      <button type="button" id="abDiscard" class="dg">Huỷ thay đổi</button>
+      <button type="button" id="abPublish" class="pri">⬆ Xuất bản</button>
+      <button type="button" id="abExit">Thoát</button>
+    </div>
+  </div>
+</div>
+
+<div id="toasts" aria-live="polite" aria-atomic="false"></div>
+
+<!-- ============ HỘP THOẠI: KẾT NỐI / CÀI ĐẶT ============ -->
+<dialog id="dlgCfg" class="dlg">
+  <form method="dialog" class="dlghead"><h3>Kết nối kho nội dung</h3><button value="cancel" class="x" aria-label="Đóng">✕</button></form>
+  <p class="note">Chọn nơi lưu nội dung để mọi giáo viên đều thấy bản mới nhất. Nội dung trang luôn tải tức thì; chỉ thao tác <b>Xuất bản</b> mới cần kết nối.</p>
+  <div id="cfgBody"></div>
+</dialog>
+
+<!-- ============ HỘP THOẠI: LỊCH SỬ PHIÊN BẢN ============ -->
+<dialog id="dlgHist" class="dlg wide">
+  <form method="dialog" class="dlghead"><h3>Lịch sử phiên bản</h3><button value="cancel" class="x" aria-label="Đóng">✕</button></form>
+  <div id="histBody"><p class="note">Đang tải…</p></div>
+</dialog>
+
+<!-- ============ HỘP THOẠI: XUẤT / NẠP DỮ LIỆU ============ -->
+<dialog id="dlgData" class="dlg wide">
+  <form method="dialog" class="dlghead"><h3>Xuất / nạp dữ liệu</h3><button value="cancel" class="x" aria-label="Đóng">✕</button></form>
+  <div class="row" style="margin-bottom:10px">
+    <button type="button" class="pri" id="dDownload">⬇ Tải content.json</button>
+    <button type="button" id="dUpload">⬆ Nạp từ tệp…</button>
+    <button type="button" id="dCopy">Sao chép JSON</button>
+    <input type="file" id="dFile" accept=".json,application/json" hidden>
+  </div>
+  <p class="note">Dùng để sao lưu, chuyển sang máy khác, hoặc nạp lại bản cũ. Chấp nhận cả dữ liệu xuất từ phiên bản trước (định dạng <code>{d,m}</code>).</p>
+  <textarea id="dJson" spellcheck="false" aria-label="Dữ liệu JSON"></textarea>
+  <div class="row" style="margin-top:10px">
+    <button type="button" class="pri" id="dLoad">Nạp vào bản nháp</button>
+    <button type="button" id="dValidate">Kiểm tra hợp lệ</button>
+    <span id="dMsg" class="note"></span>
+  </div>
+</dialog>
+
+<!-- ============ HỘP THOẠI: XEM TRƯỚC PHIÊN BẢN ============ -->
+<dialog id="dlgPrev" class="dlg wide tall">
+  <form method="dialog" class="dlghead"><h3 id="prevTitle">Xem trước</h3><button value="cancel" class="x" aria-label="Đóng">✕</button></form>
+  <div id="prevBody" class="prevwrap"></div>
+  <div class="row" style="margin-top:10px"><button type="button" class="pri" id="prevRestore">Khôi phục phiên bản này</button><button value="cancel" method="dialog">Đóng</button></div>
+</dialog>
+
+<script src="content.embed.js"></script>
+<script src="core.js"></script>
+<script src="storage.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>
