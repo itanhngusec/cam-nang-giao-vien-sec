@@ -19,7 +19,7 @@
   "heroTitle": "Cẩm nang",
   "heroTitleAccent": "giáo viên",
   "logo": "assets/logo.jpg",
-  "updatedAt": "2026-10-02T08:48:43.800Z",
+  "updatedAt": "2026-10-02T08:51:52.382Z",
   "updatedBy": "Hà Trang - QLCL",
   "version": "1.0.0"
  },
@@ -736,8 +736,8 @@
   {
    "id": "s-7b2ec72d",
    "phase": "common",
-   "title": "Mục mới123",
-   "body": "- Nội dung mới123",
+   "title": "Đầu mối zalo liên hệ làm việc",
+   "body": "![Thng_bo_CP_NHT_V_PHN_LOI_3_ZALO_(2)](assets/muqq29j7-thng-bo-cp-nht-v-phn-loi-3-zalo-2.webp)",
    "links": []
   }
  ],
@@ -813,5 +813,5 @@
    "url": "https://docs.google.com/spreadsheets/d/1jK0uK5UpJ9FvfAWDzxo8OaF7uY13S1kFW8ZyJ_NDdRo/edit?gid=0#gid=0"
   }
  ],
- "__rateLeft": "50"
+ "__rateLeft": "4992"
 }
