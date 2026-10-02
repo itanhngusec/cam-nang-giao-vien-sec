@@ -19,7 +19,7 @@
   "heroTitle": "Cẩm nang",
   "heroTitleAccent": "giáo viên",
   "logo": "assets/logo.jpg",
-  "updatedAt": "2026-10-02T08:07:20.100Z",
+  "updatedAt": "2026-10-02T08:08:39.514Z",
   "updatedBy": "Thành",
   "version": "1.0.0"
  },
@@ -734,13 +734,6 @@
    ]
   },
   {
-   "id": "s26-moi",
-   "phase": "common",
-   "title": "Mục mớiáddsf",
-   "body": "**Heello**\n## sdfdsf\n### sdfsdf\nsdfsdsadfsadfasdfasdfsadfsadfsdf\n",
-   "links": []
-  },
-  {
    "id": "s27-moi",
    "phase": "before",
    "title": "Mục mớiádfasdf",
@@ -820,5 +813,5 @@
    "url": "https://docs.google.com/spreadsheets/d/1jK0uK5UpJ9FvfAWDzxo8OaF7uY13S1kFW8ZyJ_NDdRo/edit?gid=0#gid=0"
   }
  ],
- "__rateLeft": "4975"
+ "__rateLeft": "4964"
 }
