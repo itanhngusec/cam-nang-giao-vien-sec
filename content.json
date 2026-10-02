@@ -19,8 +19,8 @@
   "heroTitle": "Cẩm nang",
   "heroTitleAccent": "giáo viên",
   "logo": "assets/logo.jpg",
-  "updatedAt": "2026-10-02T08:51:52.382Z",
-  "updatedBy": "Hà Trang - QLCL",
+  "updatedAt": "2026-10-02T08:52:33.451Z",
+  "updatedBy": "Thành",
   "version": "1.0.0"
  },
  "phases": [
@@ -736,8 +736,15 @@
   {
    "id": "s-7b2ec72d",
    "phase": "common",
-   "title": "Đầu mối zalo liên hệ làm việc",
-   "body": "![Thng_bo_CP_NHT_V_PHN_LOI_3_ZALO_(2)](assets/muqq29j7-thng-bo-cp-nht-v-phn-loi-3-zalo-2.webp)",
+   "title": "Mục mới123",
+   "body": "- Nội dung mới123",
+   "links": []
+  },
+  {
+   "id": "s28-moi",
+   "phase": "before",
+   "title": "Mục mới",
+   "body": "![66b6b2144860ff7f441864cc_668c2e32dadbbb125801bae3_AI20Infrastructure%20map](assets/muqq5ckn-66b6b2144860ff7f441864cc-668c2e32dadbbb125.png)- Nội dung mới",
    "links": []
   }
  ],
@@ -813,5 +820,5 @@
    "url": "https://docs.google.com/spreadsheets/d/1jK0uK5UpJ9FvfAWDzxo8OaF7uY13S1kFW8ZyJ_NDdRo/edit?gid=0#gid=0"
   }
  ],
- "__rateLeft": "4992"
+ "__rateLeft": "4989"
 }
