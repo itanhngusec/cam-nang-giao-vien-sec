@@ -19,7 +19,7 @@
   "heroTitle": "Cẩm nang",
   "heroTitleAccent": "giáo viên",
   "logo": "assets/logo.jpg",
-  "updatedAt": "2026-10-02T08:56:10.943Z",
+  "updatedAt": "2026-10-09T17:07:25.028Z",
   "updatedBy": "Thành",
   "version": "1.0.0"
  },
@@ -737,7 +737,7 @@
    "id": "s-7b2ec72d",
    "phase": "common",
    "title": "Mục mới123",
-   "body": "- Nội dung mới123",
+   "body": "- Nội dung mới123\n![mindx_og_logo](assets/mv17x6lw-mindx-og-logo.png)",
    "links": []
   }
  ],
@@ -813,5 +813,5 @@
    "url": "https://docs.google.com/spreadsheets/d/1jK0uK5UpJ9FvfAWDzxo8OaF7uY13S1kFW8ZyJ_NDdRo/edit?gid=0#gid=0"
   }
  ],
- "__rateLeft": "4967"
+ "__rateLeft": "4999"
 }
