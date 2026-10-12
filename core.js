@@ -370,11 +370,28 @@
     return '<a href="' + U.esc(h) + '"' + (ext ? ' target="_blank" rel="noopener noreferrer"' : '') + '>' + label + '</a>';
   };
 
+  /* Cỡ hiển thị ảnh: ![mô tả|nho](…) ![…|vua](…) ![…|lon](…) ![…|600](…) ![…|50%](…) */
+  var IMG_SIZE = { nho: '320', vua: '560', lon: '900', full: '100%' };
+  MD.parseImgAlt = function (alt) {
+    var m = /^(.*?)\s*\|\s*([A-Za-zÀ-ỹ0-9%]+)$/.exec(String(alt == null ? '' : alt).trim());
+    if (!m) return { alt: String(alt == null ? '' : alt), size: '' };
+    var key = m[2].toLowerCase(), size = '';
+    if (IMG_SIZE[key]) size = IMG_SIZE[key];
+    else if (/^\d+%?$/.test(key)) size = key;
+    if (!size) return { alt: String(alt == null ? '' : alt), size: '' };
+    return { alt: m[1], size: size };
+  };
   MD.image = function (alt, url) {
+    var pi = MD.parseImgAlt(alt);
     var src = MD.assetResolver ? MD.assetResolver(url) : url;
     if (!/^https?:|^data:image|^\/|^\.\.?\//i.test(String(src))) src = safeHref(src);
-    return '<figure class="fig"><img src="' + U.esc(src) + '" alt="' + U.esc(alt || '') + '" loading="lazy">' +
-      (alt ? '<figcaption>' + U.esc(alt) + '</figcaption>' : '') + '</figure>';
+    var style = pi.size
+      ? (/^\d+$/.test(pi.size) ? 'max-width:' + pi.size + 'px;width:100%;height:auto'
+                                : 'width:' + pi.size + ';max-width:100%;height:auto')
+      : '';
+    return '<figure class="fig"><img src="' + U.esc(src) + '" alt="' + U.esc(pi.alt) + '" loading="lazy"' +
+      (style ? ' style="' + style + '"' : '') + '>' +
+      (pi.alt ? '<figcaption>' + U.esc(pi.alt) + '</figcaption>' : '') + '</figure>';
   };
 
   // Inline: escape -> giữ link/ảnh -> highlight từ khóa -> in đậm -> phục hồi link
@@ -455,6 +472,60 @@
     ta.value = v.slice(0, ls) + block + v.slice(le);
     ta.focus(); ta.selectionStart = ls; ta.selectionEnd = ls + block.length;
     ta.dispatchEvent(new Event('input', { bubbles: true }));
+  };
+
+  /* ------------------------------------------------- xử lý ảnh khi tải lên */
+  /* Tự điều chỉnh kích thước ảnh NGAY trong trình duyệt trước khi upload:
+     - ảnh lớn hơn hạn mức  -> co lại theo cạnh dài nhất (max)
+     - ảnh nhỏ hơn min và bật upscale -> phóng lên (mặc định TẮT)
+     - nén lại JPEG/WebP theo chất lượng; giữ PNG nếu có nền trong suốt      */
+  var IMG = {};
+  SEC.img = IMG;
+  IMG.defaults = { max: 1600, min: 0, quality: 0.82, upscale: false };
+
+  IMG.hasAlpha = function (ctx, w, h) {
+    try {
+      var d = ctx.getImageData(0, 0, w, h).data;
+      for (var i = 3; i < d.length; i += 16) if (d[i] < 250) return true;   // quét nhảy bước cho nhanh
+    } catch (e) { }
+    return false;
+  };
+
+  IMG.process = function (file, opt) {
+    opt = Object.assign({}, IMG.defaults, opt || {});
+    return new Promise(function (res, rej) {
+      if (!file || !/^image\//.test(file.type || '')) return rej(new Error('Tệp không phải ảnh'));
+      var url = URL.createObjectURL(file);
+      var img = new Image();
+      img.onload = function () {
+        try {
+          var w = img.naturalWidth || img.width, h = img.naturalHeight || img.height;
+          if (!w || !h) throw new Error('Ảnh không có kích thước');
+          var scale = 1, longest = Math.max(w, h);
+          if (opt.max && longest > opt.max) scale = opt.max / longest;
+          else if (opt.upscale && opt.min && longest < opt.min) scale = opt.min / longest;
+          var nw = Math.max(1, Math.round(w * scale)), nh = Math.max(1, Math.round(h * scale));
+          var canvas = document.createElement('canvas');
+          canvas.width = nw; canvas.height = nh;
+          var ctx = canvas.getContext('2d');
+          ctx.imageSmoothingQuality = 'high';
+          ctx.drawImage(img, 0, 0, nw, nh);
+          var type = file.type;
+          if (type === 'image/png' && !IMG.hasAlpha(ctx, nw, nh) && scale !== 1) type = 'image/jpeg';
+          else if (type !== 'image/png' && type !== 'image/webp') type = 'image/jpeg';
+          if (type === 'image/jpeg' && file.type === 'image/png' && IMG.hasAlpha(ctx, nw, nh)) type = 'image/png';
+          var out = canvas.toDataURL(type, opt.quality);
+          URL.revokeObjectURL(url);
+          res({
+            dataUrl: out, width: nw, height: nh, type: type,
+            bytes: Math.round((out.length - out.indexOf(',') - 1) * 0.75),
+            origBytes: file.size || 0, scaled: scale !== 1
+          });
+        } catch (e) { URL.revokeObjectURL(url); rej(e); }
+      };
+      img.onerror = function () { URL.revokeObjectURL(url); rej(new Error('Không đọc được tệp ảnh này')); };
+      img.src = url;
+    });
   };
 
   /* ------------------------------------------------------ localStorage */

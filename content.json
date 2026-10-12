@@ -1,11 +1,11 @@
 {
  "v": 5,
  "meta": {
-  "title": "Cẩm nang giáo viên SEC",
+  "title": "Sơ đồ thông tin dành cho giáo viên",
   "subtitle": "Quy trình vận hành lớp, mẫu tin nhắn và tài liệu cho giáo viên: trước, trong và sau khóa học. Tìm nhanh theo từ khóa.",
-  "brand": "Cẩm nang giáo viên",
+  "brand": "Sơ đồ thông tin dành cho giáo viên",
   "org": "SEC – Tiếng Anh đơn giản",
-  "footer": "Cẩm nang dành cho giáo viên SEC. Cần bổ sung hoặc sửa nội dung? Liên hệ quản lý đào tạo.",
+  "footer": "Sơ đồ thông tin dành cho giáo viên SEC. Cần bổ sung hoặc sửa nội dung? Liên hệ quản lý đào tạo.",
   "searchPlaceholder": "Tìm theo từ khóa: zoom, BTVN, xin nghỉ, bảo lưu…",
   "quickChips": [
    "Zoom",
@@ -16,12 +16,12 @@
    "Bảo lưu"
   ],
   "commonDocsTitle": "Tài liệu chung",
-  "heroTitle": "Cẩm nang",
-  "heroTitleAccent": "giáo viên",
-  "logo": "assets/logo.jpg",
-  "updatedAt": "2026-10-09T17:07:25.028Z",
-  "updatedBy": "Thành",
-  "version": "1.0.0"
+  "updatedAt": "2026-10-01T07:15:47.311Z",
+  "updatedBy": "Bản gốc",
+  "version": "1.0.0",
+  "heroTitle": "Sơ đồ thông tin",
+  "heroTitleAccent": "dành cho giáo viên",
+  "logo": "assets/logo.jpg"
  },
  "phases": [
   {
@@ -32,8 +32,7 @@
     "Test tài khoản Zoom & Gmail, chuẩn bị slide, luyện tập bài giảng",
     "Kết bạn trợ giảng, tham gia nhóm FB/Zalo lớp, giới thiệu bản thân"
    ],
-   "outcome": "sẵn sàng 100% về công cụ, nội dung và kết nối với lớp trước buổi khai giảng",
-   "notes": []
+   "outcome": "sẵn sàng 100% về công cụ, nội dung và kết nối với lớp trước buổi khai giảng"
   },
   {
    "id": "during",
@@ -44,8 +43,7 @@
     "Theo dõi chỉ số, báo cáo tuần, xử lý tình huống đặc biệt",
     "**Riêng KTN:** buổi 2 phổ biến nội quy, hướng dẫn cách làm BTVN; buổi 4 hướng dẫn học viên xem bài chữa"
    ],
-   "outcome": "buổi học diễn ra đúng quy trình, học viên được chăm sóc xuyên suốt",
-   "notes": []
+   "outcome": "buổi học diễn ra đúng quy trình, học viên được chăm sóc xuyên suốt"
   },
   {
    "id": "after",
@@ -56,8 +54,7 @@
     "Đánh giá feedback để xét tiêu chuẩn nhận lớp mới",
     "**Riêng KTN:** buổi 24 làm bài test cuối khóa"
    ],
-   "outcome": "học viên được chốt khóa đầy đủ, GV có căn cứ để nhận lớp tiếp theo",
-   "notes": []
+   "outcome": "học viên được chốt khóa đầy đủ, GV có căn cứ để nhận lớp tiếp theo"
   },
   {
    "id": "common",
@@ -65,8 +62,7 @@
    "bullets": [
     "Chính sách, chương trình và công cụ dùng xuyên suốt cả ba giai đoạn: học phí, Góc lan tỏa, Getfly, Q&A hàng tuần, tài liệu tham khảo"
    ],
-   "outcome": "",
-   "notes": []
+   "outcome": ""
   }
  ],
  "sections": [
@@ -194,9 +190,33 @@
    ]
   },
   {
+   "id": "s09-giao-cham-dang-bai-tap-ve-nha-btvn",
+   "phase": "during",
+   "title": "Giao, chấm & đăng bài tập về nhà (BTVN)",
+   "body": "## Lấy BTVN\n- Lấy trong sheet check lớp (chọn đúng sheet theo cơ sở, khóa, thời điểm khai giảng, xem mục kế tiếp) hoặc trong file chăm sóc học viên\n## Chấm bài\n- Chỉ chấm phần viết lại câu\n- Chấm đúng deadline cho học viên nộp đúng hạn. Học viên nộp muộn thì báo lại với giáo viên hoặc trợ giảng\n- Có thể dùng trợ lý chấm bài KTN bằng ChatGPT (xem mục Công cụ & tài liệu tham khảo)\n## Đăng bài / status sau buổi học\n- Đăng thông báo đã chấm bài xong và các lỗi sai học viên thường mắc phải\n## Báo cáo chấm bài\n- Điền vào file báo cáo chấm bài của GV",
+   "links": [
+    {
+     "name": "[Mr. Tú] Theo dõi chăm sóc học viên",
+     "url": "https://docs.google.com/spreadsheets/d/1qV5cUndy2KLY-eGmhi9AEv38APf_rK8jh0KFDKXQK0Q/edit?gid=1182708028#gid=1182708028"
+    },
+    {
+     "name": "NEW SEC-support 01.08 (mẫu status)",
+     "url": "https://docs.google.com/spreadsheets/d/14K8jiarRqXgHbouGEB2OLUSS09Pp12DyPp03IxreCVA/edit?gid=1165815168#gid=1165815168"
+    },
+    {
+     "name": "Báo cáo chấm bài của GV",
+     "url": "https://docs.google.com/spreadsheets/d/1g4RMwf9xh6FWA-CgOeJl5TOrmL17-BlxmaHSTGs5lxQ/edit?gid=1434757348#gid=1434757348"
+    },
+    {
+     "name": "Tổng hợp lỗi sai khóa KTN",
+     "url": "https://docs.google.com/spreadsheets/d/14SmG6PZOOdX-lJWZiLiqw7EitpSBEt_pZpv6b4VWENM/edit?gid=0#gid=0"
+    }
+   ]
+  },
+  {
    "id": "s10-link-check-btvn-theo-khoa-hoc",
    "phase": "during",
-   "title": "Danh sách lớp theo khoá học",
+   "title": "Link check BTVN theo khóa học",
    "body": "- Chọn đúng sheet theo **khóa học** và **thời điểm khai giảng** của lớp mình\n## KTN & TOEIC đang học\n- Cơ sở Trường Chinh chia sheet theo tháng khai giảng: từ T6/2026, từ T12/2025, từ T9/2025, từ T8/2025 trở về trước\n- Cơ sở Hà Đông – Cầu Giấy có sheet riêng\n## IELTS · Giao tiếp · VSTEP · TOEIC SW\n- IELTS: lớp khai giảng từ T10/2025 và từ T9/2025 trở về trước\n- Giao tiếp (PCT): sheet chung của tất cả thầy cô từ T2/2026; lớp khai giảng từ T1/2026 trở về trước có sheet riêng theo giáo viên\n## Lớp đã học xong / lớp cũ\n- TOEIC LR đã học xong, KTN đã học xong, lớp luyện đề thực chiến, IELTS Minh Trang (cũ)",
    "links": [
     {
@@ -266,30 +286,6 @@
     {
      "name": "IELTS Minh Trang (cũ)",
      "url": "https://docs.google.com/spreadsheets/d/1_3j1VgfyZWzskHKeDgBcUZGxer-WYSnMug0742D3XCA/edit?gid=1052564921#gid=1052564921"
-    }
-   ]
-  },
-  {
-   "id": "s09-giao-cham-dang-bai-tap-ve-nha-btvn",
-   "phase": "during",
-   "title": "Giao, chấm & đăng bài tập về nhà (BTVN)",
-   "body": "## Lấy BTVN\n- Lấy trong sheet check lớp (chọn đúng sheet theo cơ sở, khóa, thời điểm khai giảng, xem mục kế tiếp) hoặc trong file chăm sóc học viên\n## Chấm bài\n- Chỉ chấm phần viết lại câu\n- Chấm đúng deadline cho học viên nộp đúng hạn. Học viên nộp muộn thì báo lại với giáo viên hoặc trợ giảng\n- Có thể dùng trợ lý chấm bài KTN bằng ChatGPT (xem mục Công cụ & tài liệu tham khảo)\n## Đăng bài / status sau buổi học\n- Đăng thông báo đã chấm bài xong và các lỗi sai học viên thường mắc phải\n## Báo cáo chấm bài\n- Điền vào file báo cáo chấm bài của GV",
-   "links": [
-    {
-     "name": "[Mr. Tú] Theo dõi chăm sóc học viên",
-     "url": "https://docs.google.com/spreadsheets/d/1qV5cUndy2KLY-eGmhi9AEv38APf_rK8jh0KFDKXQK0Q/edit?gid=1182708028#gid=1182708028"
-    },
-    {
-     "name": "NEW SEC-support 01.08 (mẫu status)",
-     "url": "https://docs.google.com/spreadsheets/d/14K8jiarRqXgHbouGEB2OLUSS09Pp12DyPp03IxreCVA/edit?gid=1165815168#gid=1165815168"
-    },
-    {
-     "name": "Báo cáo chấm bài của GV",
-     "url": "https://docs.google.com/spreadsheets/d/1g4RMwf9xh6FWA-CgOeJl5TOrmL17-BlxmaHSTGs5lxQ/edit?gid=1434757348#gid=1434757348"
-    },
-    {
-     "name": "Tổng hợp lỗi sai khóa KTN",
-     "url": "https://docs.google.com/spreadsheets/d/14SmG6PZOOdX-lJWZiLiqw7EitpSBEt_pZpv6b4VWENM/edit?gid=0#gid=0"
     }
    ]
   },
@@ -397,14 +393,18 @@
    "id": "s14-bao-luu-chuyen-lop-dung-hoc-hoc-lai",
    "phase": "during",
    "title": "Bảo lưu, chuyển lớp, dừng học & học lại",
-   "body": "- **Hành chính là bộ phận cuối cùng chốt và xác nhận dừng học cho học viên.** Giáo viên tuyệt đối không tự ý xác nhận dừng học\n- Giáo viên điền form báo cáo bảo lưu, chuyển lớp và theo dõi kết quả trong sheet kết quả\n- **Đối với trường hợp học lại:** Học viên muốn học lại điền form đăng ký học lại; hành chính kiểm tra kết quả học tập và hỗ trợ đăng ký sau 2–3 ngày làm việc\n## - Gửi học viên mẫu tin nhắn đăng ký học lại bên dưới:\nLink đăng kí học lại tại SEC: https://forms.gle/mDPoJNtcGSUNDytV8\nSau khi các bạn điền link bộ phận hành chính sẽ check lại kết quả học tập và hỗ trợ bạn đăng ký học lại sau 2-3 ngày làm việc!\nTrường hợp chưa nhận được kết quả vui lòng nhắn lại zalo hotline 0923 805 999 để SEC phản hồi bạn nhé!\nXin cảm ơn!\n",
+   "body": "- **Hành chính là bộ phận cuối cùng chốt và xác nhận dừng học cho học viên.** Giáo viên tuyệt đối không tự ý xác nhận dừng học\n- Giáo viên điền form báo cáo bảo lưu, chuyển lớp và theo dõi kết quả trong sheet kết quả\n- Học viên muốn học lại điền form đăng ký học lại; hành chính kiểm tra kết quả học tập và hỗ trợ đăng ký sau 2–3 ngày làm việc\n- Gửi học viên mẫu tin nhắn đăng ký học lại bên dưới",
    "links": [
     {
-     "name": "Form điền học viên bảo lưu, chuyển lớp",
+     "name": "Form báo cáo bảo lưu, chuyển lớp",
      "url": "https://docs.google.com/forms/d/e/1FAIpQLSeaxYJ3JFyAe56tS5jl_x_Xk4GBT1mhKav3neSpKwKZvGzEsA/viewform"
     },
     {
-     "name": "Form học viên đăng ký học lại (khi đã kết thúc khoá học)",
+     "name": "Form học viên đăng ký học lại (bản GV)",
+     "url": "https://docs.google.com/forms/d/e/1FAIpQLScMpJSOV_wrpoFnWsxlUOPPJePV6b7edEHUhlmQPRrO4sIQQQ/viewform"
+    },
+    {
+     "name": "Form đăng ký học lại (gửi học viên)",
      "url": "https://forms.gle/mDPoJNtcGSUNDytV8"
     },
     {
@@ -656,7 +656,7 @@
   {
    "id": "s22-chuong-trinh-check-in-goc-lan-toa",
    "phase": "common",
-   "title": "Chương trình check in giữa khoá",
+   "title": "Chương trình Check in – Góc lan tỏa",
    "body": "- Chương trình dành cho học viên check in và lan tỏa cùng SEC, kèm hỗ trợ lệ phí thi (tổng hỗ trợ tới 1.000.000 khi tham gia)\n- Giáo viên đăng bài check in đúng bố cục theo mẫu (KTN buổi 13, TOEIC LR sau buổi check-in)",
    "links": [
     {
@@ -666,18 +666,6 @@
     {
      "name": "Chương trình hỗ trợ lệ phí thi",
      "url": "https://www.notion.so/CH-NG-TR-NH-H-TR-L-PH-THI-47227b1507f442f0be31f36006b1c208"
-    }
-   ]
-  },
-  {
-   "id": "s27-moi",
-   "phase": "common",
-   "title": "Đầu mối zalo liên hệ làm việc",
-   "body": "Đây là nhiệm vụ bắt buộc, Giáo viên chú ý follow theo 3Q được gắn bên dưới. ",
-   "links": [
-    {
-     "name": "Link 3Q check in cuối khoá",
-     "url": "https://docs.google.com/spreadsheets/d/1NrBjXBoswSltaDl894RS4DVuFnRiZ8-IAaycY5adNKY/edit?gid=370501306#gid=370501306"
     }
    ]
   },
@@ -724,21 +712,22 @@
      "url": "https://drive.google.com/drive/folders/19uO4vgOTmANRJ-sHqLl8CLwIFyfgc6Na"
     },
     {
+     "name": "Trợ lý chấm bài KTN (ChatGPT)",
+     "url": "https://chatgpt.com/g/g-687ed18885908191b3c025ff22a61475-tro-ly-cham-bai-ktn"
+    },
+    {
      "name": "Ý tưởng Kaizen KTN & TOEIC (T7.2025)",
      "url": "https://docs.google.com/spreadsheets/d/1zJkc2xOYPzzgDu6u1ovr7tstIgUi7uOJ0tfLWcJ0Or0/edit?gid=0#gid=0"
     },
     {
      "name": "Ý tưởng Kaizen các khóa học",
      "url": "https://docs.google.com/spreadsheets/d/196Qc6W3BlhwKXFuv5taohtYPdIdx2VkSxipruT32zmc/edit?gid=0#gid=0"
+    },
+    {
+     "name": "Mẫu tin nhắn dành cho GV và TG",
+     "url": "https://docs.google.com/spreadsheets/d/118SlmdSeSbaKQWd4p1hInuutzwBAyLzKhbNXUB68Kns/edit?gid=0#gid=0"
     }
    ]
-  },
-  {
-   "id": "s-7b2ec72d",
-   "phase": "common",
-   "title": "Mục mới123",
-   "body": "- Nội dung mới123\n![mindx_og_logo](assets/mv17x6lw-mindx-og-logo.png)",
-   "links": []
   }
  ],
  "templates": [
@@ -812,6 +801,5 @@
    "name": "3Q GV - TG trước trong sau khóa học",
    "url": "https://docs.google.com/spreadsheets/d/1jK0uK5UpJ9FvfAWDzxo8OaF7uY13S1kFW8ZyJ_NDdRo/edit?gid=0#gid=0"
   }
- ],
- "__rateLeft": "4999"
+ ]
 }

@@ -18,7 +18,8 @@
       mode: 'auto',                                   // auto | static | local | github | cloud
       github: { owner: '', repo: '', branch: 'main', path: 'content.json', token: '' },
       cloud: { apiBase: '', adminKey: '' },
-      author: ''
+      author: '',
+      img: { max: 1600, quality: 0.82, upscale: false }
     };
   };
   S.loadCfg = function () {
@@ -28,6 +29,7 @@
       c = Object.assign(c, saved);
       c.github = Object.assign(S.defaultCfg().github, saved.github || {});
       c.cloud = Object.assign(S.defaultCfg().cloud, saved.cloud || {});
+      c.img = Object.assign(S.defaultCfg().img, saved.img || {});
     }
     // site-config.json (deploy kèm) ghi sẵn owner/repo/branch/apiBase — không chứa secret
     return c;

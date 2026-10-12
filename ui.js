@@ -19,7 +19,8 @@
     openSec: {}, openEd: {},
     undo: [], redo: [], pendingSnap: null,
     versions: [], baseSha: null, pubInfo: null,
-    user: '', busy: false, online: true, previewId: null
+    user: '', busy: false, online: true, previewId: null,
+    verified: 0, verifyErr: ''          // cổng quản trị: chỉ mở khi đã xác thực đúng
   };
 
   /* Người XEM luôn thấy bản đã xuất bản. ADMIN thấy bản nháp (kể cả khi bấm “Xem trang”
@@ -633,7 +634,8 @@
     if (kind === 'img') {
       const url = prompt('Dán URL ảnh (hoặc bấm “⬆ Tải ảnh” để đưa ảnh lên kho):', 'https://');
       if (!url) return;
-      MD.wrapSelection(ta, '![', '](' + url + ')', 'mô tả ảnh');
+      const size = prompt('Cỡ hiển thị: nho / vua / lon / full / số px / %\n(để trống = cỡ vừa)', 'vua') || 'vua';
+      MD.wrapSelection(ta, '![', '|' + size + '](' + url + ')', 'mô tả ảnh');
     }
   }
 
@@ -643,9 +645,18 @@
     inp.type = 'file'; inp.accept = 'image/*';
     inp.onchange = async () => {
       const f = inp.files && inp.files[0]; if (!f) return;
-      if (f.size > 3e6) return toast('Ảnh quá lớn (tối đa ~3 MB). Hãy nén lại hoặc dùng link ảnh.', 'err', 6000);
-      const dataUrl = await new Promise(res => { const r = new FileReader(); r.onload = () => res(r.result); r.readAsDataURL(f); });
-      const name = (Date.now().toString(36) + '-' + U.slug(f.name.replace(/\.[^.]+$/, '')) + '.' + (f.name.split('.').pop() || 'png')).slice(0, 60);
+      /* TỰ chỉnh kích thước + nén trong trình duyệt trước khi tải lên */
+      let dataUrl, info;
+      try {
+        info = await SEC.img.process(f, S.cfg.img);
+        dataUrl = info.dataUrl;
+        if (info.scaled || info.bytes < info.origBytes - 2048)
+          toast('🖼 Đã tự chỉnh ảnh: ' + U.bytes(info.origBytes) + ' → ' + U.bytes(info.bytes) +
+            ' (' + info.width + '×' + info.height + ')', 'ok', 5000);
+      } catch (e) { return toast('Không xử lý được ảnh: ' + e.message, 'err', 6000); }
+      if (info.bytes > 3.2e6) return toast('Ảnh vẫn quá lớn sau khi nén (' + U.bytes(info.bytes) + '). Hãy giảm chất lượng trong ⚙ Kết nối hoặc dùng link ảnh.', 'err', 7000);
+      const ext = info.type === 'image/png' ? 'png' : info.type === 'image/webp' ? 'webp' : 'jpg';
+      const name = (Date.now().toString(36) + '-' + U.slug(f.name.replace(/\.[^.]+$/, '')) + '.' + ext).slice(0, 60);
       let url;
       toast('Đang tải ảnh lên…', '', 2000);
       try {
@@ -661,9 +672,10 @@
         url = dataUrl;
         toast('Không tải lên được (' + e.message + ') — đã nhúng ảnh vào nội dung.', 'warn', 6000);
       }
+      const base = f.name.replace(/\.[^.]+$/, '');
       const ta = d.ta ? document.getElementById(d.ta) : (d.path ? findTa(d.path) : null);
-      if (ta) MD.wrapSelection(ta, `![${f.name.replace(/\.[^.]+$/, '')}](${url})`, '', '');
-      else mutate(c => { const s = U.byId(c.sections, d.id); if (s) s.body += `\n![${f.name}](${url})`; });
+      if (ta) MD.wrapSelection(ta, `![${base}|vua](${url})`, '', '');
+      else mutate(c => { const s = U.byId(c.sections, d.id); if (s) s.body += `\n![${base}|vua](${url})`; });
     };
     inp.click();
   }
@@ -821,7 +833,7 @@
         $('#prevBody').innerHTML = previewHTML(c);
         $('#dlgPrev').showModal();
       } else {
-        if (!S.admin) enterAdmin(true);
+        if (!S.admin && !(await enterAdmin(true))) return;
         pushUndo();
         S.draft = c; markDirty(); render();
         $('#dlgHist').close();
@@ -869,6 +881,16 @@
       <div class="fld"><label>Địa chỉ API</label><input id="cfBase" value="${esc(c.cloud.apiBase)}" placeholder="https://ten-cua-ban.pages.dev"></div>
       <div class="fld"><label>Mật khẩu quản trị (ADMIN_KEY)</label><input id="cfKey" type="password" value="${esc(c.cloud.adminKey)}" autocomplete="off"></div>
     </div>
+    <div class="cfgset"><h4> Ảnh tải lên — tự chỉnh kích thước</h4>
+      <div class="grid2">
+        <div class="fld"><label>Cạnh dài nhất sau khi chỉnh</label>
+          <select id="imgMax">${[[800,'800 px — nhẹ nhất'],[1200,'1200 px'],[1600,'1600 px (khuyên dùng)'],[2400,'2400 px — nét cao'],[0,'Giữ nguyên kích thước gốc']].map(o => `<option value="${o[0]}" ${(c.img && c.img.max) === o[0] ? 'selected' : ''}>${o[1]}</option>`).join('')}</select></div>
+        <div class="fld"><label>Chất lượng nén</label>
+          <select id="imgQ">${[[0.6,'0.60 — file rất nhẹ'],[0.72,'0.72 — nhẹ'],[0.82,'0.82 — cân bằng (khuyên dùng)'],[0.9,'0.90 — nét cao']].map(o => `<option value="${o[0]}" ${(c.img && c.img.quality) === o[0] ? 'selected' : ''}>${o[1]}</option>`).join('')}</select></div>
+      </div>
+      <label class="note" style="display:flex;gap:8px;align-items:center"><input type="checkbox" id="imgUp" style="width:auto" ${c.img && c.img.upscale ? 'checked' : ''}> Phóng lớn ảnh nhỏ hơn hạn mức ở trên (thường không cần)</label>
+      <p class="note">Trong nội dung, chọn cỡ hiển thị bằng cú pháp <code>![mô tả|vua](url)</code> — các cỡ: <code>nho</code> (320px), <code>vua</code> (560px), <code>lon</code> (900px), <code>full</code> (100%), hoặc số px / % tuỳ ý.</p>
+    </div>
     <div class="fld"><label>Tên người xuất bản (ghi vào lịch sử)</label><input id="cfgAuthor" value="${esc(c.author)}" placeholder="VD: Cô Lan – Quản lý đào tạo"></div>
     <p id="cfgMsg" class="note"></p>
     <div class="row" style="margin-top:12px">
@@ -889,6 +911,7 @@
       S.cfg.github = { owner: $('#ghOwner').value.trim(), repo: $('#ghRepo').value.trim(), branch: $('#ghBranch').value.trim() || 'main', path: $('#ghPath').value.trim() || 'content.json', token: $('#ghToken').value.trim() };
       S.cfg.cloud = { apiBase: $('#cfBase').value.trim(), adminKey: $('#cfKey').value.trim() };
       S.cfg.author = $('#cfgAuthor').value.trim();
+      S.cfg.img = { max: parseInt($('#imgMax').value, 10) || 0, quality: parseFloat($('#imgQ').value) || 0.82, upscale: $('#imgUp').checked };
       return S.cfg;
     };
     $('#ghDrop') && ($('#ghDrop').onclick = () => { $('#ghToken').value = ''; $('#cfgMsg').textContent = 'Đã xoá token khỏi ô nhập. Bấm Lưu để áp dụng.'; });
@@ -902,12 +925,20 @@
         if (r.user) { S.user = r.user; }
       } catch (e) { $('#cfgMsg').innerHTML = '❌ ' + esc(e.message || JSON.stringify(e)); }
     };
-    $('#cfgSave').onclick = () => {
+    $('#cfgSave').onclick = async () => {
       readForm();
       ST.saveCfg(S.cfg);
       applyMode();
+      S.verified = 0;
+      $('#cfgMsg').textContent = 'Đang kiểm tra quyền trên máy chủ…';
+      const okv = await verify(true);
+      if (!okv) {
+        $('#cfgMsg').innerHTML = '<b class="bad">❌ ' + esc(S.verifyErr) + '</b><br><span class="note">Chưa vào được quản trị. Kiểm tra lại token / mật khẩu / quyền ghi.</span>';
+        return;
+      }
+      $('#cfgMsg').innerHTML = '<b>✅ Xác thực thành công.</b>';
       $('#dlgCfg').close();
-      enterAdmin(true);
+      await enterAdmin(true);
     };
     $('#cfgLogout').onclick = () => {
       exitAdmin(); $('#dlgCfg').close();
@@ -921,18 +952,51 @@
     updateStatus();
   }
 
-  function enterAdmin(force) {
-    if (!S.admin) {
-      if (!canPublish() && S.mode !== 'local' && !force) { openCfg(); return; }
-      S.admin = true;
-      if (!S.draft) S.draft = U.clone(S.pub || C());
-      S.view = 'edit';
-      if (!canPublish() && S.mode === 'static') { S.cfg.mode = 'local'; ST.saveCfg(S.cfg); applyMode(); toast('Chưa cấu hình kho nội dung → đang ở chế độ bản nháp trên máy này.', 'warn', 6000); }
-      toast('Đã bật chế độ quản trị. Sửa xong nhớ bấm “Xuất bản”.', 'ok', 5000);
-    } else if (force) { S.view = 'edit'; }
+  /* CỔNG QUẢN TRỊ: xác thực QUYỀN GHI với máy chủ TRƯỚC khi mở bảng quản trị.
+     - local  : không cần mạng (bản nháp chỉ trên máy này, không thể xuất bản ra ngoài)
+     - github : token phải đúng VÀ có quyền push vào repo
+     - cloud  : mật khẩu phải khớp ADMIN_KEY phía server
+     Sai bất kỳ điều gì => KHÔNG vào được quản trị, kèm lý do rõ ràng.        */
+  async function verify(force) {
+    if (S.mode === 'local') { S.verified = Date.now(); S.verifyErr = ''; return true; }
+    if (S.mode === 'static') { S.verifyErr = 'Chưa cấu hình nơi lưu nội dung (chọn GitHub hoặc Cloudflare).'; return false; }
+    if (!force && S.verified && Date.now() - S.verified < 300000) return true;
+    const c = cfgFor();
+    if (!S.adapter.canPublish(c)) {
+      S.verifyErr = S.mode === 'github'
+        ? 'Thiếu token GitHub hoặc thiếu owner/repo.'
+        : 'Thiếu địa chỉ API hoặc mật khẩu quản trị (ADMIN_KEY).';
+      return false;
+    }
+    try {
+      const r = await S.adapter.check(c);
+      if (r && r.ok && r.push !== false) { S.verified = Date.now(); S.verifyErr = ''; if (r.user) S.user = r.user; return true; }
+      S.verifyErr = (r && r.message) || 'Thông tin kết nối không có quyền ghi.';
+      return false;
+    } catch (e) {
+      S.verifyErr = (e && e.message) || 'Không kiểm tra được kết nối (mạng?).';
+      return false;
+    }
+  }
+
+  async function enterAdmin(force) {
+    if (S.admin) { if (force) { S.view = 'edit'; render(); } return true; }
+    const okv = await verify(true);
+    if (!okv) {
+      toast('🔒 Không mở được quản trị: ' + S.verifyErr, 'err', 7000);
+      openCfg();
+      const m = $('#cfgMsg');
+      if (m) m.innerHTML = '<b class="bad">❌ ' + esc(S.verifyErr) + '</b> — chưa vào được quản trị. Sửa lại thông tin rồi bấm “Lưu & đăng nhập quản trị”.';
+      return false;
+    }
+    S.admin = true;
+    if (!S.draft) S.draft = U.clone(S.pub || EMBEDDED);
+    S.view = 'edit';
+    toast('Đã bật chế độ quản trị (' + S.adapter.short + '). Sửa xong nhớ bấm “Xuất bản”.', 'ok', 5000);
     U.ls.set(K.ui, { admin: S.admin, view: S.view, tab: S.tab, etab: S.etab });
     render();
     g.scrollTo(0, Math.min(g.scrollY, 200));
+    return true;
   }
   function exitAdmin() {
     S.admin = false; S.view = 'read';
@@ -1069,7 +1133,7 @@
 
     /* thanh quản trị */
     $('#btnAdmin').onclick = () => S.admin ? exitAdmin() : enterAdmin();
-    $('#navAdmin').onclick = e => { e.preventDefault(); enterAdmin(true); document.getElementById('overview').scrollIntoView({ behavior: 'smooth' }); };
+    $('#navAdmin').onclick = async e => { e.preventDefault(); if (await enterAdmin(true)) document.getElementById('overview').scrollIntoView({ behavior: 'smooth' }); };
     $('#abPublish').onclick = doPublish;
     $('#abDiscard').onclick = discardDraft;
     $('#abUndo').onclick = doUndo;
@@ -1098,10 +1162,10 @@
         `${c.phases.length} giai đoạn, ${c.sections.length} mục, ${c.templates.length} mẫu, ${U.bytes(v.size || 0)}` +
         (v.warnings.length ? `<br><span class="note">⚠ ${esc(v.warnings.slice(0, 4).join(' · '))}</span>` : '');
     };
-    $('#dLoad').onclick = () => {
+    $('#dLoad').onclick = async () => {
       const c = M.migrate($('#dJson').value);
       if (!c) { $('#dMsg').innerHTML = '<b class="bad">❌ Không nạp được: JSON sai định dạng</b>'; return; }
-      if (!S.admin) enterAdmin(true);
+      if (!S.admin && !(await enterAdmin(true))) return;
       pushUndo(); S.draft = c; markDirty(); render();
       $('#dlgData').close();
       toast('Đã nạp vào BẢN NHÁP (' + M.summarize(S.pub, c) + '). Bấm “Xuất bản” để áp dụng cho mọi người.', 'ok', 8000);
@@ -1164,7 +1228,7 @@
         notice(`Bạn có <b>bản nháp chưa xuất bản</b> (lưu lúc ${esc(U.fmtDate(new Date(dr.at).toISOString()))}). ` +
           `<button type="button" class="pri sm" id="ntcResume">Tiếp tục sửa</button> ` +
           `<button type="button" class="sm" id="ntcDiscard">Huỷ bản nháp</button>`, 'info');
-        $('#ntcResume').onclick = () => { enterAdmin(true); notice(''); };
+        $('#ntcResume').onclick = async () => { if (await enterAdmin(true)) notice(''); };
         $('#ntcDiscard').onclick = () => { U.ls.del(K.draft); S.draft = null; S.dirty = false; notice(''); render(); toast('Đã huỷ bản nháp'); };
       } else U.ls.del(K.draft);
     }
