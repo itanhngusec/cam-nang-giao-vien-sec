@@ -19,8 +19,8 @@
   "heroTitle": "Sơ đồ thông tin",
   "heroTitleAccent": "dành cho giáo viên",
   "logo": "assets/logo.jpg",
-  "updatedAt": "2026-10-12T04:39:14.939Z",
-  "updatedBy": "Thành",
+  "updatedAt": "2026-10-13T03:08:11.002Z",
+  "updatedBy": "Hà Trang - QLCL",
   "version": "1.0.0"
  },
  "phases": [
@@ -737,7 +737,7 @@
    "id": "s26-moi",
    "phase": "common",
    "title": "Mục mới123",
-   "body": "- Nội dung mới\n![Quy_trình_quản_lý_LMS|vua](assets/mv4rhxvr-quy-trinh-quan-ly-lms.jpg)",
+   "body": "- Nội dung mới\n![Quy_trình_quản_lý_LMS|vua](assets/mv4rhxvr-quy-trinh-quan-ly-lms.jpg)\nádf",
    "links": []
   }
  ],
@@ -813,5 +813,5 @@
    "url": "https://docs.google.com/spreadsheets/d/1jK0uK5UpJ9FvfAWDzxo8OaF7uY13S1kFW8ZyJ_NDdRo/edit?gid=0#gid=0"
   }
  ],
- "__rateLeft": "4983"
+ "__rateLeft": "4989"
 }
