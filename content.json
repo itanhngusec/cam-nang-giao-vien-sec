@@ -17,7 +17,7 @@
   "heroTitle": "Sơ đồ thông tin",
   "heroTitleAccent": "dành cho giáo viên",
   "logo": "assets/logo.jpg",
-  "updatedAt": "2026-10-16T09:23:03.091Z",
+  "updatedAt": "2026-10-16T09:31:13.072Z",
   "updatedBy": "Hà Trang",
   "version": "1.0.0"
  },
@@ -72,7 +72,7 @@
    "id": "s01-nhan-lop-ket-noi-voi-lop",
    "phase": "before",
    "title": "Nhận lớp & kết nối với lớp",
-   "body": "- Nhận thông tin lớp (mã lớp, ca học, sĩ số, danh sách học viên) từ hành chính\n- Kết bạn trợ giảng, tham gia nhóm Facebook/Zalo của lớp, giới thiệu bản thân\n- Nắm phân loại 3 Zalo theo thông báo cập nhật của trung tâm\n- Sau khi nhận lớp, kiểm tra học viên có thuộc diện cần bản cam kết đặc biệt hay không (xem mục Học viên diện đặc biệt)",
+   "body": "![Thng_bo_CP_NHT_V_PHN_LOI_3_ZALO_(2)|vua](assets/mvarpek8-thng-bo-cp-nht-v-phn-loi-3-zalo-2.webp)- Nhận thông tin lớp (mã lớp, ca học, sĩ số, danh sách học viên) từ hành chính\n- Kết bạn trợ giảng, tham gia nhóm Facebook/Zalo của lớp, giới thiệu bản thân\n- Nắm phân loại 3 Zalo theo thông báo cập nhật của trung tâm\n- Sau khi nhận lớp, kiểm tra học viên có thuộc diện cần bản cam kết đặc biệt hay không (xem mục Học viên diện đặc biệt)",
    "links": []
   },
   {
@@ -815,5 +815,5 @@
    "url": "https://docs.google.com/spreadsheets/d/1jK0uK5UpJ9FvfAWDzxo8OaF7uY13S1kFW8ZyJ_NDdRo/edit?gid=0#gid=0"
   }
  ],
- "__rateLeft": "4990"
+ "__rateLeft": "4983"
 }
