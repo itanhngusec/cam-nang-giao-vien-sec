@@ -8,14 +8,16 @@
   "footer": "Sơ đồ thông tin dành cho giáo viên SEC. Nếu bạn cần bổ sung hoặc sửa nội dung? Vui lòng liên hệ zalo quản lý chất lượng.",
   "searchPlaceholder": "Tìm theo từ khoá: bảo lưu, trường hợp đặc biệt,...",
   "quickChips": [
+   "tổng chỉ số",
    "bảo lưu",
-   "trường hợp đặc biệt"
+   "trường hợp đặc biệt",
+   "sheet check lớp"
   ],
   "commonDocsTitle": "Tài liệu chung",
   "heroTitle": "Sơ đồ thông tin",
   "heroTitleAccent": "dành cho giáo viên",
   "logo": "assets/logo.jpg",
-  "updatedAt": "2026-10-16T09:16:59.355Z",
+  "updatedAt": "2026-10-16T09:23:03.091Z",
   "updatedBy": "Hà Trang",
   "version": "1.0.0"
  },
@@ -216,7 +218,7 @@
   {
    "id": "s10-link-check-btvn-theo-khoa-hoc",
    "phase": "during",
-   "title": "Link check BTVN theo khóa học",
+   "title": "Sheet check lớp theo khóa học",
    "body": "- Chọn đúng sheet theo **khóa học** và **thời điểm khai giảng** của lớp mình\n## KTN & TOEIC đang học\n- Cơ sở Trường Chinh chia sheet theo tháng khai giảng: từ T6/2026, từ T12/2025, từ T9/2025, từ T8/2025 trở về trước\n- Cơ sở Hà Đông – Cầu Giấy có sheet riêng\n## IELTS · Giao tiếp · VSTEP · TOEIC SW\n- IELTS: lớp khai giảng từ T10/2025 và từ T9/2025 trở về trước\n- Giao tiếp (PCT): sheet chung của tất cả thầy cô từ T2/2026; lớp khai giảng từ T1/2026 trở về trước có sheet riêng theo giáo viên\n## Lớp đã học xong / lớp cũ\n- TOEIC LR đã học xong, KTN đã học xong, lớp luyện đề thực chiến, IELTS Minh Trang (cũ)",
    "links": [
     {
@@ -286,6 +288,10 @@
     {
      "name": "IELTS Minh Trang (cũ)",
      "url": "https://docs.google.com/spreadsheets/d/1_3j1VgfyZWzskHKeDgBcUZGxer-WYSnMug0742D3XCA/edit?gid=1052564921#gid=1052564921"
+    },
+    {
+     "name": "KTN/TOEIC: Check lớp từ T9/2026",
+     "url": "https://docs.google.com/spreadsheets/d/1b0bsMkbAfrvbJxvCynzEZdXnOoQBTQFAD_IwB9NERuI/edit?gid=885864042#gid=885864042"
     }
    ]
   },
@@ -809,5 +815,5 @@
    "url": "https://docs.google.com/spreadsheets/d/1jK0uK5UpJ9FvfAWDzxo8OaF7uY13S1kFW8ZyJ_NDdRo/edit?gid=0#gid=0"
   }
  ],
- "__rateLeft": "59"
+ "__rateLeft": "4990"
 }
