@@ -5,22 +5,18 @@
   "subtitle": "Quy trình vận hành lớp, mẫu tin nhắn và tài liệu cho giáo viên: trước, trong và sau khóa học. Tìm nhanh theo từ khóa.",
   "brand": "Sơ đồ thông tin dành cho giáo viên",
   "org": "SEC – Tiếng Anh đơn giản",
-  "footer": "Sơ đồ thông tin dành cho giáo viên SEC. Cần bổ sung hoặc sửa nội dung? Liên hệ quản lý đào tạo.",
-  "searchPlaceholder": "Tìm theo từ khóa: zoom, BTVN, xin nghỉ, bảo lưu…",
+  "footer": "Sơ đồ thông tin dành cho giáo viên SEC. Nếu bạn cần bổ sung hoặc sửa nội dung? Vui lòng liên hệ zalo quản lý chất lượng.",
+  "searchPlaceholder": "Tìm theo từ khoá: bảo lưu, trường hợp đặc biệt,...",
   "quickChips": [
-   "Zoom",
-   "Livestream",
-   "BTVN",
-   "Báo cáo tuần",
-   "Xin nghỉ",
-   "Bảo lưu"
+   "bảo lưu",
+   "trường hợp đặc biệt"
   ],
   "commonDocsTitle": "Tài liệu chung",
   "heroTitle": "Sơ đồ thông tin",
   "heroTitleAccent": "dành cho giáo viên",
   "logo": "assets/logo.jpg",
-  "updatedAt": "2026-10-13T03:08:11.002Z",
-  "updatedBy": "Hà Trang - QLCL",
+  "updatedAt": "2026-10-16T09:16:59.355Z",
+  "updatedBy": "Hà Trang",
   "version": "1.0.0"
  },
  "phases": [
@@ -813,5 +809,5 @@
    "url": "https://docs.google.com/spreadsheets/d/1jK0uK5UpJ9FvfAWDzxo8OaF7uY13S1kFW8ZyJ_NDdRo/edit?gid=0#gid=0"
   }
  ],
- "__rateLeft": "4989"
+ "__rateLeft": "59"
 }
